@@ -19,7 +19,6 @@
   /* ---------- liens & textes simples ---------- */
   $$("[data-saison]").forEach((e) => (e.textContent = C.saison));
   $$("[data-link]").forEach((a) => { const u = C.contact[a.dataset.link]; if (u) a.href = u; });
-  $$("[data-mail]").forEach((a) => { a.href = "mailto:" + C.contact.email + "?subject=" + encodeURIComponent("Inscription AS Gournay Natation"); });
   $$('[data-link="inscription"]').forEach((a) => { if (!C.contact.inscription || C.contact.inscription === "#") { a.removeAttribute("target"); a.href = "#contact"; } });
   if (C.alerte?.actif) { $("#alerte").hidden = false; $("#alerte-texte").textContent = C.alerte.texte; }
   $("#c-adresse").innerHTML = `${esc(C.contact.adresse)}<br>${esc(C.contact.ville)}`;
