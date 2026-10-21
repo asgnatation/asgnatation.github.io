@@ -203,6 +203,7 @@ window.CLUB = {
   aides: [
     { titre: "Réduction famille", texte: "−10 € pour le 2e adhérent, −15 € pour le 3e, −20 € pour le 4e." },
     { titre: "Pass Sport", texte: "50 € de réduction pour les jeunes éligibles (ne s'applique pas à la part licence)." },
+    { titre: "Pass Jeunes 76", texte: "30 € de réduction pour les jeunes éligibles." },
     { titre: "Atouts Normandie", texte: "30 € pour les 15-25 ans inscrits sur la plateforme de la Région." }
   ],
 

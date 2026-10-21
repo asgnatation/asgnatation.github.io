@@ -34,12 +34,12 @@ window.REGLEMENT = {
           "liste": [
             "Espèces,",
             "Chèque,",
-            "Pass 76, sur présentation de l'attestation d'inscription en ligne, ou attestation ARS",
+            "Pass Jeunes 76, sur présentation de l'attestation d'inscription en ligne, ou attestation ARS",
             "Pass sports, sur présentation du code envoyé par mail sauf pour la licence",
             "Atouts Normandie, sur présentation du coupon de prépaiement."
           ],
           "apres": [
-            "A son inscription, l'adhérent devra s'acquitter de l'intégralité de sa cotisation licence comprise. Dans le cas d'un règlement par : Pass 76, Atouts Normandie ou Pass sport, un chèque équivalent au montant de l'aide sera demandé jusqu'au paiement des organismes au Club. Il sera alors restitué à l'adhérent. Dans le cas contraire, il sera encaissé. En dehors des aides précédemment citées, le paiement de la cotisation peut être échelonné.",
+            "A son inscription, l'adhérent devra s'acquitter de l'intégralité de sa cotisation licence comprise. Dans le cas d'un règlement par : Pass Jeunes 76, Atouts Normandie ou Pass sport, un chèque équivalent au montant de l'aide sera demandé jusqu'au paiement des organismes au Club. Il sera alors restitué à l'adhérent. Dans le cas contraire, il sera encaissé. En dehors des aides précédemment citées, le paiement de la cotisation peut être échelonné.",
             "Les tarifs sont fixés annuellement par le Bureau et indiqués à l'inscription.",
             "La cotisation comprend le prix de la licence - reversée à la fédération - et l'adhésion au club. Le montant de l'adhésion est fixé chaque année par le comité directeur de l'association. En cas d'inscription en cours de saison (à partir du 1er janvier), un tarif dégressif pourra être consenti au prorata des mois à échoir."
           ]
