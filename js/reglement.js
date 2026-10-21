@@ -32,7 +32,7 @@ window.REGLEMENT = {
             "Le Club accepte les modes de règlement suivants"
           ],
           "liste": [
-            "Espèce,",
+            "Espèces,",
             "Chèque,",
             "Pass 76, sur présentation de l'attestation d'inscription en ligne, ou attestation ARS",
             "Pass sports, sur présentation du code envoyé par mail sauf pour la licence",
