@@ -182,13 +182,13 @@ window.CLUB = {
   /* Équipe : photo = "assets/img/equipe/prenom.webp" quand elle sera prête (laisser "" en attendant) */
   equipe: {
     bureau: [
-      { nom: "Véronique Cotineau", role: "Présidente", photo: "" },
-      { nom: "Kristell Faverot", role: "Secrétaire", photo: "" },
-      { nom: "Véronique Bisschop", role: "Trésorière", photo: "" }
+      { nom: "Véronique Cotineau", role: "Présidente", photo: "assets/img/equipe/veronique-c.webp" },
+      { nom: "Kristell Faverot", role: "Secrétaire", photo: "assets/img/equipe/kristell.webp" },
+      { nom: "Véronique Bisschop", role: "Trésorière", photo: "assets/img/equipe/veronique-b.webp" }
     ],
     entraineurs: [
-      { nom: "David Cotineau", role: "Entraîneur principal", photo: "" },
-      { nom: "Médéric Cotineau", role: "Entraîneur", photo: "" }
+      { nom: "David Cotineau", role: "Entraîneur principal", photo: "assets/img/equipe/david.webp" },
+      { nom: "Médéric Cotineau", role: "Entraîneur", photo: "assets/img/equipe/mederic.webp" }
     ],
     officiels: [
       { nom: "Margot Cateigne", role: "Officielle", photo: "" },
@@ -197,7 +197,7 @@ window.CLUB = {
       { nom: "Jennifer Dekkers", role: "Officielle", photo: "" }
     ],
     communication: [
-      { nom: "Gaby Cotineau", role: "Community manager", photo: "" }
+      { nom: "Gaby Cotineau", role: "Community manager", photo: "assets/img/equipe/gaby.webp" }
     ]
   },
 
