@@ -27,7 +27,8 @@ window.CLUB = {
     ville: "76220 Gournay-en-Bray",
     instagram: "https://www.instagram.com/asg.natation/",
     facebook: "https://facebook.com/asgnatation",
-    inscription: "#"   // À REMPLACER par le lien du formulaire d'inscription en ligne
+    inscription: "https://docs.google.com/forms/d/e/1FAIpQLSfYlPb8i1LIcI_O2U-_giJkqKYNiXwLPlDB_S91Cj1O7wGJ5g/viewform?usp=sharing&ouid=113866492546397083910",
+    ffn: "https://docs.google.com/forms/d/e/1FAIpQLSfB0d1dalgp4Cyj-zg17RMrTq8_RUhLMPmCGh6xx7N1z6YLNA/viewform?usp=sharing&ouid=113866492546397083910"
   },
 
   chiffres: [
