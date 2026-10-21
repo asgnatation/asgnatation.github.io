@@ -21,7 +21,7 @@ window.CLUB = {
   },
 
   contact: {
-    email: "asgournaynatation@gmail.com",
+    email: "asgnatation76220@gmail.com",
     telephone: "06 15 54 59 99",
     adresse: "Piscine municipale, avenue des Aulnaies",
     ville: "76220 Gournay-en-Bray",
@@ -183,7 +183,7 @@ window.CLUB = {
     bureau: [
       { nom: "Véronique Cotineau", role: "Présidente", photo: "" },
       { nom: "Kristell Faverot", role: "Secrétaire", photo: "" },
-      { nom: "Véronique Bisschope", role: "Trésorière", photo: "" }
+      { nom: "Véronique Bisschop", role: "Trésorière", photo: "" }
     ],
     entraineurs: [
       { nom: "David Cotineau", role: "Entraîneur principal", photo: "" },
