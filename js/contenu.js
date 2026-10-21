@@ -203,8 +203,7 @@ window.CLUB = {
   aides: [
     { titre: "Réduction famille", texte: "−10 € pour le 2e adhérent, −15 € pour le 3e, −20 € pour le 4e." },
     { titre: "Pass Sport", texte: "50 € de réduction pour les jeunes éligibles (ne s'applique pas à la part licence)." },
-    { titre: "Atouts Normandie", texte: "50 € pour les 15-25 ans inscrits sur la plateforme de la Région." },
-    { titre: "Chèques ANCV", texte: "Chèques vacances ANCV et Coupon Sport acceptés, jusqu'à la moitié de l'adhésion." }
+    { titre: "Atouts Normandie", texte: "30 € pour les 15-25 ans inscrits sur la plateforme de la Région." }
   ],
 
   aSavoir: [
