@@ -341,7 +341,7 @@ button{font:inherit; color:inherit; cursor:pointer}
 .member{border-radius:var(--r); background:var(--surface); border:1px solid var(--line); overflow:hidden; transition:transform .3s}
 .member:hover{transform:translateY(-4px) rotate(-.5deg)}
 .member__ph{aspect-ratio:1/1; background:linear-gradient(160deg, var(--aqua), var(--bg-2)); display:grid; place-items:center; position:relative; overflow:hidden}
-.member__ph img{width:100%; height:100%; object-fit:cover}
+.member__ph img{width:100%; height:100%; object-fit:contain; object-position:center bottom}
 .member__ph svg{width:52%; height:auto; color:color-mix(in srgb, var(--pool) 45%, transparent)}
 .member__ph .tbd{position:absolute; left:10px; bottom:10px; font:600 .62rem var(--f-mono); letter-spacing:.08em; text-transform:uppercase; padding:5px 8px; border-radius:99px; background:var(--surface); color:var(--muted)}
 .member__in{padding:14px 16px 16px}
