@@ -27,8 +27,7 @@ window.CLUB = {
     ville: "76220 Gournay-en-Bray",
     instagram: "https://www.instagram.com/asg.natation/",
     facebook: "https://facebook.com/asgnatation",
-    inscription: "https://docs.google.com/forms/d/e/1FAIpQLSfYlPb8i1LIcI_O2U-_giJkqKYNiXwLPlDB_S91Cj1O7wGJ5g/viewform?usp=sharing&ouid=113866492546397083910",
-    ffn: "https://docs.google.com/forms/d/e/1FAIpQLSfB0d1dalgp4Cyj-zg17RMrTq8_RUhLMPmCGh6xx7N1z6YLNA/viewform?usp=sharing&ouid=113866492546397083910"
+    inscription: "https://docs.google.com/forms/d/e/1FAIpQLSe1ZkYMv3dCR8Eww5ALX32KMcwuMmgLUw5mFazryrNyenA-6g/viewform"
   },
 
   chiffres: [
@@ -197,12 +196,13 @@ window.CLUB = {
       { nom: "Jennifer Dekkers", role: "Officielle", photo: "" }
     ],
     communication: [
-      { nom: "Gaby Cotineau", role: "Community manager", photo: "assets/img/equipe/gaby.webp" }
+      { nom: "Gaby Cotineau", role: "Community manager", photo: "assets/img/equipe/gaby.webp" },
+      { nom: "Médéric Cotineau", role: "Community manager", photo: "assets/img/equipe/mederic.webp" }
     ]
   },
 
   aides: [
-    { titre: "Réduction famille", texte: "−10 € pour le 2e adhérent, −15 € pour le 3e, −20 € pour le 4e." },
+    { titre: "Réduction famille", texte: "−10 € pour le 2e adhérent, −15 € pour le 3e, −20 € pour le 4e (cumulable)." },
     { titre: "Pass Sport", texte: "50 € de réduction pour les jeunes éligibles (ne s'applique pas à la part licence)." },
     { titre: "Pass Jeunes 76", texte: "30 € de réduction pour les jeunes éligibles." },
     { titre: "Atouts Normandie", texte: "30 € pour les 15-25 ans inscrits sur la plateforme de la Région." }
