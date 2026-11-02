@@ -1,5 +1,15 @@
 /* Concept : vue plongeante sur le bassin. Sections séparées par des lignes d'eau,
    typo XXL qui flotte sur l'eau, accents vert « bonnet » utilisés avec parcimonie. */
+/* Polices hébergées sur le site (aucune connexion à Google Fonts) */
+@font-face{font-family:"Unbounded"; font-weight:500; font-display:swap; src:url(../assets/fonts/unbounded-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Unbounded"; font-weight:700; font-display:swap; src:url(../assets/fonts/unbounded-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Unbounded"; font-weight:900; font-display:swap; src:url(../assets/fonts/unbounded-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:"Onest"; font-weight:400; font-display:swap; src:url(../assets/fonts/onest-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Onest"; font-weight:500; font-display:swap; src:url(../assets/fonts/onest-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Onest"; font-weight:600; font-display:swap; src:url(../assets/fonts/onest-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Onest"; font-weight:700; font-display:swap; src:url(../assets/fonts/onest-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Martian Mono"; font-weight:400; font-display:swap; src:url(../assets/fonts/martian-mono-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Martian Mono"; font-weight:600; font-display:swap; src:url(../assets/fonts/martian-mono-latin-600-normal.woff2) format("woff2")}
 :root{
   --bg:#F2F8FB; --bg-2:#E4F2F9; --surface:#FFFFFF; --ink:#0B2536; --muted:#4F6A7D; --line:#D3E6F0;
   --pool:#0E8AD0; --pool-deep:#0A5F96; --aqua:#C3E7F7; --mint:#3DD683; --mint-ink:#0B7F46; --on-mint:#05281A;
@@ -456,3 +466,6 @@ a.next:hover{transform:translateY(-3px)}
 .doc__art li{margin:2px 0}
 .doc__foot{margin-top:40px; padding-top:16px; border-top:1px solid var(--paper-line); font-size:.82rem; color:var(--paper-muted); text-align:center}
 @media (max-width:860px){ .doc__layout{grid-template-columns:1fr} .doc__toc{display:none} .doc__scroll{padding-top:16px} .doc__head{flex-direction:column; align-items:flex-start; gap:14px} .doc__art p{text-align:left} }
+
+.footer__copy{grid-column:1/-1; margin:0; font-size:.82rem; opacity:.7}
+.doc__art sup{font-size:.7em}

@@ -8,18 +8,26 @@
 <meta name="description" content="Club de natation de Gournay-en-Bray (76) : loisirs, perfectionnement et compétition, en bassin et en eau libre. Groupes, horaires, tarifs et inscriptions.">
 <meta property="og:title" content="AS Gournay Natation">
 <meta property="og:description" content="Club de natation de Gournay-en-Bray : loisirs, perfectionnement et compétition.">
-<meta property="og:image" content="assets/img/equipe-fresque.webp">
+<link rel="canonical" href="https://asgnatation.fr/">
+<meta property="og:url" content="https://asgnatation.fr/">
+<meta property="og:site_name" content="AS Gournay Natation">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://asgnatation.fr/assets/img/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SportsClub","name":"AS Gournay Natation","alternateName":"ASG Natation","url":"https://asgnatation.fr/","logo":"https://asgnatation.fr/assets/logos/logo-asg.png","sport":"Natation","telephone":"+33615545999","email":"asgnatation76220@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Piscine municipale, avenue des Aulnaies","postalCode":"76220","addressLocality":"Gournay-en-Bray","addressCountry":"FR"},"sameAs":["https://www.instagram.com/asg.natation/","https://facebook.com/asgnatation"]}
+</script>
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0f8fd6">
 <link rel="icon" type="image/svg+xml" href="assets/logos/logo-asg.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Onest:wght@400;500;600;700&family=Martian+Mono:wght@400;600&display=swap">
+<link rel="preload" href="assets/fonts/unbounded-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/style.css">
 <script type="importmap">
 { "imports": {
-  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  "three": "./js/vendor/three/three.module.min.js",
+  "three/addons/": "./js/vendor/three/addons/"
 } }
 </script>
 </head>
@@ -309,11 +317,10 @@
     </div>
     <nav class="footer__links" aria-label="Documents">
       <button class="footer__link" data-open-reglement>Règlement intérieur</button>
+      <button class="footer__link" data-open-legal="mentions">Mentions légales</button>
+      <button class="footer__link" data-open-legal="confidentialite">Confidentialité</button>
     </nav>
-    <details class="legal">
-      <summary>Mentions légales</summary>
-      <p>Éditeur : AS Gournay Natation, association loi 1901, piscine municipale, avenue des Aulnaies, 76220 Gournay-en-Bray. Responsable de la publication : la présidence de l'association. Hébergement : GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis. Les photos sont publiées avec l'autorisation des adhérents ou de leurs représentants légaux. Pour toute demande de retrait, écrire à l'adresse e-mail du club.</p>
-    </details>
+    <p class="footer__copy">© <span data-year>2026</span> AS Gournay Natation · Ce site n'utilise aucun cookie.</p>
   </div>
 </footer>
 
@@ -330,6 +337,78 @@
   </div>
 </dialog>
 
+<dialog class="doc" id="legal" data-lenis-prevent aria-labelledby="legal-title">
+  <div class="doc__bar">
+    <span class="doc__bar-t">Informations légales</span>
+    <button class="doc__close" id="legal-close" aria-label="Fermer les informations légales">Fermer <span aria-hidden="true">×</span></button>
+  </div>
+  <div class="doc__scroll" id="legal-scroll" data-lenis-prevent>
+    <div class="doc__layout">
+      <aside class="doc__toc" aria-label="Sommaire"><p class="doc__toc-t">Sommaire</p>
+        <ol>
+          <li><a href="#lg-mentions">I. Mentions légales</a></li>
+          <li><a href="#lg-confidentialite">II. Politique de confidentialité</a></li>
+          <li><a href="#lg-images">III. Droit à l'image</a></li>
+          <li><a href="#lg-pi">IV. Propriété intellectuelle</a></li>
+        </ol>
+      </aside>
+      <article class="doc__paper">
+        <header class="doc__head">
+          <img src="assets/logos/logo-asg.svg" alt="" width="120" height="68">
+          <div><p class="doc__kicker">AS Gournay Natation · Association loi 1901 affiliée à la FFN</p>
+          <h2 class="doc__title" id="legal-title">Informations légales</h2>
+          <p class="doc__season">Mises à jour en novembre 2026</p></div>
+        </header>
+
+        <section class="doc__sec" id="lg-mentions"><h3 class="doc__h3"><span>I</span>Mentions légales</h3>
+          <div class="doc__art"><h4 class="doc__h4">Éditeur du site<span>Association Sportive Gournay Natation (ASG Natation)</span></h4>
+            <ul>
+              <li>Association déclarée régie par la loi du 1<sup>er</sup> juillet 1901</li>
+              <li>Siège social : piscine municipale, avenue des Aulnaies, 76220 Gournay-en-Bray</li>
+              <li>Numéro RNA : W761004850</li>
+              <li>SIRET : 842 043 879 00019</li>
+              <li>Téléphone : <span data-c="telephone"></span></li>
+              <li>E-mail : <span data-c="email"></span></li>
+            </ul></div>
+          <div class="doc__art"><h4 class="doc__h4">Directrice de la publication<span>Véronique Cotineau, présidente de l'association</span></h4></div>
+          <div class="doc__art"><h4 class="doc__h4">Hébergement<span>GitHub, Inc. (service GitHub Pages)</span></h4>
+            <p>88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis. Téléphone : +1 877 448 4820. Site : github.com</p></div>
+          <div class="doc__art"><h4 class="doc__h4">Nom de domaine<span>asgnatation.fr</span></h4>
+            <p>Enregistré auprès d'OVHcloud, 2 rue Kellermann, 59100 Roubaix, France.</p></div>
+        </section>
+
+        <section class="doc__sec" id="lg-confidentialite"><h3 class="doc__h3"><span>II</span>Politique de confidentialité</h3>
+          <div class="doc__art"><h4 class="doc__h4">Navigation sur le site<span>Aucun cookie, aucun suivi</span></h4>
+            <p>Ce site ne dépose aucun cookie et n'utilise aucun outil de mesure d'audience ni de publicité. Les polices et les scripts sont hébergés sur le site lui-même : votre navigation ne transmet aucune donnée à Google ni à un autre service tiers.</p>
+            <p>Comme tout hébergeur, GitHub peut enregistrer des données techniques de connexion, dont l'adresse IP, pour assurer la sécurité du service. Ces données sont traitées par GitHub conformément à sa propre déclaration de confidentialité, consultable sur docs.github.com.</p></div>
+          <div class="doc__art"><h4 class="doc__h4">Liens vers d'autres services<span>Instagram, Facebook, Google Forms, Google Maps</span></h4>
+            <p>Les boutons Instagram, Facebook, Itinéraire et Inscription ouvrent des services externes. Ils ne sont chargés qu'au moment où vous cliquez, et relèvent alors des politiques de confidentialité de ces services.</p></div>
+          <div class="doc__art"><h4 class="doc__h4">Données d'inscription<span>Formulaire d'adhésion et licence FFN</span></h4>
+            <p>Les informations saisies dans le formulaire d'inscription (identité, coordonnées, responsable légal, informations nécessaires à la licence, autorisations) sont collectées par l'AS Gournay Natation, responsable du traitement.</p>
+            <ul>
+              <li>Finalités : gestion des adhésions, des groupes, des paiements et des présences, prise de licence auprès de la Fédération Française de Natation, communication avec les adhérents.</li>
+              <li>Base légale : l'exécution du contrat d'adhésion à l'association et, pour le droit à l'image, votre consentement.</li>
+              <li>Destinataires : les membres du bureau et les entraîneurs, dans la limite de leurs missions, ainsi que la Fédération Française de Natation pour la licence. Les données ne sont ni vendues ni cédées.</li>
+              <li>Durée de conservation : la saison sportive en cours, puis au maximum 3 ans après la fin de l'adhésion, sauf obligation légale contraire (pièces comptables).</li>
+              <li>Le formulaire est hébergé par Google (Google Forms), qui agit comme sous-traitant technique.</li>
+            </ul></div>
+          <div class="doc__art"><h4 class="doc__h4">Vos droits<span>Accès, rectification, effacement, opposition</span></h4>
+            <p>Conformément au Règlement général sur la protection des données (RGPD) et à la loi Informatique et Libertés, vous pouvez accéder à vos données, les faire rectifier ou effacer, limiter leur traitement, vous y opposer et retirer votre consentement à tout moment, en écrivant à <span data-c="email"></span>. Si vous estimez que vos droits ne sont pas respectés, vous pouvez adresser une réclamation à la CNIL (cnil.fr).</p></div>
+        </section>
+
+        <section class="doc__sec" id="lg-images"><h3 class="doc__h3"><span>III</span>Droit à l'image</h3>
+          <div class="doc__art"><p>Les photos des nageurs, notamment des mineurs, sont publiées uniquement avec l'autorisation donnée lors de l'inscription par l'adhérent ou son représentant légal. Les résultats sont présentés avec le prénom et l'initiale du nom. Toute personne peut demander le retrait d'une photo ou d'une information la concernant en écrivant à <span data-c="email"></span> : la demande est traitée dans les meilleurs délais.</p></div>
+        </section>
+
+        <section class="doc__sec" id="lg-pi"><h3 class="doc__h3"><span>IV</span>Propriété intellectuelle</h3>
+          <div class="doc__art"><p>Le logo, les textes et les photographies de ce site appartiennent à l'AS Gournay Natation ou à leurs auteurs, et ne peuvent être réutilisés sans autorisation. Les logos des partenaires restent la propriété de leurs titulaires respectifs et sont affichés avec leur accord dans le cadre du partenariat.</p></div>
+        </section>
+        <footer class="doc__foot">AS Gournay Natation · Piscine municipale, avenue des Aulnaies, 76220 Gournay-en-Bray</footer>
+      </article>
+    </div>
+  </div>
+</dialog>
+
 <dialog class="lightbox" id="lightbox" aria-label="Photo agrandie">
   <img id="lb-img" alt="">
   <button class="lb-btn lb-close" id="lb-close" aria-label="Fermer">×</button>
@@ -337,12 +416,13 @@
   <button class="lb-btn lb-next" id="lb-next" aria-label="Photo suivante">›</button>
 </dialog>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="js/vendor/lenis.min.js"></script>
 <script src="js/contenu.js"></script>
 <script src="js/reglement.js"></script>
 <script src="js/main.js"></script>
+<script src="js/legal.js"></script>
 <script type="module" src="js/water.js"></script>
 <script type="module" src="js/bonnet.js"></script>
 </body>
