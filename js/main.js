@@ -196,6 +196,7 @@
 
   /* ---------- galerie + lightbox ---------- */
   const G = C.galerie;
+  if ($("#mosaic")) {
   $("#mosaic").innerHTML = G.map((g, i) => `<button data-i="${i}" aria-label="Agrandir : ${esc(g.alt)}"><img src="${esc(g.src.replace(".webp", "-sm.webp"))}" alt="${esc(g.alt)}" loading="lazy"></button>`).join("");
   const lb = $("#lightbox"), lbImg = $("#lb-img"); let cur = 0;
   const show = (i) => { cur = (i + G.length) % G.length; lbImg.src = G[cur].src; lbImg.alt = G[cur].alt; };
@@ -203,6 +204,7 @@
   $("#lb-close").onclick = () => lb.close(); $("#lb-prev").onclick = () => show(cur - 1); $("#lb-next").onclick = () => show(cur + 1);
   lb.addEventListener("click", (e) => { if (e.target === lb) lb.close(); });
   lb.addEventListener("keydown", (e) => { if (e.key === "ArrowLeft") show(cur - 1); if (e.key === "ArrowRight") show(cur + 1); });
+  }
 
   /* ---------- inscription ---------- */
   $("#aides").innerHTML = C.aides.map((a) => `<li><b>${esc(a.titre)}</b>${esc(a.texte)}</li>`).join("");

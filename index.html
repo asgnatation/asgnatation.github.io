@@ -230,10 +230,24 @@
   <!-- ============ GALERIE ============ -->
   <section class="section galerie" id="galerie">
     <div class="wrap">
-      <div class="section__head">
-        <div><p class="eyebrow">Galerie</p><h2 class="h2 reveal">Au bord du bassin.</h2></div>
+      <div class="section__head gal__head">
+        <div><p class="eyebrow">Galerie · <span id="gal-total">photos</span></p><h2 class="h2 reveal">Plus de quinze ans au bord du bassin.</h2></div>
+        <div class="gal__nav">
+          <button class="gal__arrow" id="gal-prev" aria-label="Année précédente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <div class="gal__picker">
+            <button class="gal__year" id="gal-year" aria-haspopup="listbox" aria-expanded="false" aria-controls="gal-menu">
+              <span class="gal__year-k">Année</span><b>2026</b><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <ul class="gal__menu" id="gal-menu" role="listbox" aria-label="Choisir une année" hidden></ul>
+          </div>
+          <button class="gal__arrow" id="gal-next" aria-label="Année suivante"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
       </div>
-      <div class="mosaic" id="mosaic"></div>
+      <div class="gal" id="gal">
+        <div class="gal__mark" id="gal-mark" aria-hidden="true">2026</div>
+        <p class="gal__meta" id="gal-meta" aria-live="polite"></p>
+        <div class="gal__grid" id="gal-grid"></div>
+      </div>
     </div>
   </section>
 
@@ -409,6 +423,20 @@
   </div>
 </dialog>
 
+<dialog class="vw" id="viewer" data-lenis-prevent aria-labelledby="vw-title">
+  <div class="vw__top">
+    <div class="vw__info"><span class="vw__date" id="vw-date"></span><b class="vw__title" id="vw-title"></b></div>
+    <span class="vw__count" id="vw-count"></span>
+    <button class="vw__close" id="vw-close" aria-label="Fermer l'album">×</button>
+  </div>
+  <div class="vw__stage">
+    <button class="vw__nav vw__nav--prev" id="vw-prev" aria-label="Photo précédente"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <figure class="vw__fig"><img id="vw-img" alt=""><figcaption id="vw-cap" hidden></figcaption></figure>
+    <button class="vw__nav vw__nav--next" id="vw-next" aria-label="Photo suivante"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+  <div class="vw__strip" id="vw-strip"></div>
+</dialog>
+
 <dialog class="lightbox" id="lightbox" aria-label="Photo agrandie">
   <img id="lb-img" alt="">
   <button class="lb-btn lb-close" id="lb-close" aria-label="Fermer">×</button>
@@ -422,6 +450,8 @@
 <script src="js/contenu.js"></script>
 <script src="js/reglement.js"></script>
 <script src="js/main.js"></script>
+<script src="js/galerie-photos.js"></script>
+<script src="js/galerie.js"></script>
 <script src="js/legal.js"></script>
 <script type="module" src="js/water.js"></script>
 <script type="module" src="js/bonnet.js"></script>
