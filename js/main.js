@@ -279,7 +279,7 @@
   // reveals
   $$(".reveal").forEach((el) => gsap.from(el, { y: 36, opacity: 0, duration: .9, ease: "power3.out", scrollTrigger: { trigger: el, start: "top 88%", once: true } }));
   // parallax photos
-  $$("[data-speed]").forEach((el) => gsap.to(el, { yPercent: -100 * +el.dataset.speed, ease: "none", scrollTrigger: { trigger: ".club", start: "top bottom", end: "bottom top", scrub: true } }));
+  if (matchMedia("(min-width: 901px)").matches) $$("[data-speed]").forEach((el) => gsap.to(el, { yPercent: -100 * +el.dataset.speed, ease: "none", scrollTrigger: { trigger: ".club", start: "top bottom", end: "bottom top", scrub: true } }));
   // counters
   $$("[data-count]").forEach((el) => {
     const end = +el.dataset.count, suf = el.dataset.suffix || "", o = { v: 0 };
