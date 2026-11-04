@@ -6,7 +6,7 @@
       nom.webp (grande, environ 1600 px) et nom-sm.webp (miniature, environ 560 px).
    2. Ajouter un album dans l'année voulue (ou une photo dans un album existant) :
       { titre: "Meeting de ...", date: "12 mars", photos: [
-          { src: "assets/galerie/2027/meeting-1.webp", w: 1600, h: 1200, legende: "Texte optionnel" }
+          { src: "2027/meeting-1.webp", w: 1600, h: 1200, legende: "Texte optionnel" }
       ] }
    3. Pour une nouvelle année, copier un bloc { annee: "...", albums: [...] } en haut de la liste.
    L'année la plus récente s'affiche en premier. w et h = largeur et hauteur de la grande image.
@@ -81,7 +81,7 @@ window.GALERIE = {
      "date": "Avril",
      "photos": [
       {
-       "src": "assets/galerie/2026/paques-1.webp",
+       "src": "2026/paques-1.webp",
        "w": 1600,
        "h": 1200,
        "legende": "Groupe Ados loisirs"
@@ -93,12 +93,12 @@ window.GALERIE = {
      "date": "Juin",
      "photos": [
       {
-       "src": "assets/galerie/2026/fete-1.webp",
+       "src": "2026/fete-1.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2026/fete-2.webp",
+       "src": "2026/fete-2.webp",
        "w": 1600,
        "h": 1200
       }
@@ -109,7 +109,7 @@ window.GALERIE = {
      "date": "",
      "photos": [
       {
-       "src": "assets/galerie/2026/reg-benjamins-1.webp",
+       "src": "2026/reg-benjamins-1.webp",
        "w": 1600,
        "h": 1206,
        "legende": "Vedran K., qualifié pour la Coupe des régions"
@@ -126,7 +126,7 @@ window.GALERIE = {
      "date": "Novembre",
      "photos": [
       {
-       "src": "assets/galerie/2025/reg-granville-1.webp",
+       "src": "2025/reg-granville-1.webp",
        "w": 1200,
        "h": 1600
       }
@@ -137,12 +137,12 @@ window.GALERIE = {
      "date": "",
      "photos": [
       {
-       "src": "assets/galerie/2025/adultes-loisirs-1.webp",
+       "src": "2025/adultes-loisirs-1.webp",
        "w": 960,
        "h": 720
       },
       {
-       "src": "assets/galerie/2025/adultes-loisirs-2.webp",
+       "src": "2025/adultes-loisirs-2.webp",
        "w": 960,
        "h": 720
       }
@@ -153,7 +153,7 @@ window.GALERIE = {
      "date": "",
      "photos": [
       {
-       "src": "assets/galerie/2025/masters-1.webp",
+       "src": "2025/masters-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -169,42 +169,42 @@ window.GALERIE = {
      "date": "10 et 11 février",
      "photos": [
       {
-       "src": "assets/galerie/2024/grandvilliers-1.webp",
+       "src": "2024/grandvilliers-1.webp",
        "w": 1600,
        "h": 1067
       },
       {
-       "src": "assets/galerie/2024/grandvilliers-2.webp",
+       "src": "2024/grandvilliers-2.webp",
        "w": 1600,
        "h": 1066
       },
       {
-       "src": "assets/galerie/2024/grandvilliers-3.webp",
+       "src": "2024/grandvilliers-3.webp",
        "w": 1600,
        "h": 1067
       },
       {
-       "src": "assets/galerie/2024/grandvilliers-4.webp",
+       "src": "2024/grandvilliers-4.webp",
        "w": 1600,
        "h": 1069
       },
       {
-       "src": "assets/galerie/2024/grandvilliers-5.webp",
+       "src": "2024/grandvilliers-5.webp",
        "w": 1600,
        "h": 1067
       },
       {
-       "src": "assets/galerie/2024/grandvilliers-6.webp",
+       "src": "2024/grandvilliers-6.webp",
        "w": 1600,
        "h": 1067
       },
       {
-       "src": "assets/galerie/2024/grandvilliers-7.webp",
+       "src": "2024/grandvilliers-7.webp",
        "w": 1600,
        "h": 1067
       },
       {
-       "src": "assets/galerie/2024/grandvilliers-8.webp",
+       "src": "2024/grandvilliers-8.webp",
        "w": 1600,
        "h": 1066,
        "legende": "Nos super-héros"
@@ -221,7 +221,7 @@ window.GALERIE = {
      "date": "Septembre",
      "photos": [
       {
-       "src": "assets/galerie/2023/jumieges-1.webp",
+       "src": "2023/jumieges-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -232,7 +232,7 @@ window.GALERIE = {
      "date": "Octobre",
      "photos": [
       {
-       "src": "assets/galerie/2023/maill-eau-1.webp",
+       "src": "2023/maill-eau-1.webp",
        "w": 1200,
        "h": 1600
       }
@@ -248,7 +248,7 @@ window.GALERIE = {
      "date": "Octobre",
      "photos": [
       {
-       "src": "assets/galerie/2021/post-covid-1.webp",
+       "src": "2021/post-covid-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -259,7 +259,7 @@ window.GALERIE = {
      "date": "Décembre",
      "photos": [
       {
-       "src": "assets/galerie/2021/reg-hiver-1.webp",
+       "src": "2021/reg-hiver-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -275,7 +275,7 @@ window.GALERIE = {
      "date": "Décembre",
      "photos": [
       {
-       "src": "assets/galerie/2019/presse-1.webp",
+       "src": "2019/presse-1.webp",
        "w": 1460,
        "h": 1600,
        "legende": "Article de L'Éclaireur"
@@ -292,7 +292,7 @@ window.GALERIE = {
      "date": "",
      "photos": [
       {
-       "src": "assets/galerie/2017/reg-ete-1.webp",
+       "src": "2017/reg-ete-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -308,7 +308,7 @@ window.GALERIE = {
      "date": "Février",
      "photos": [
       {
-       "src": "assets/galerie/2016/courbevoie-1.webp",
+       "src": "2016/courbevoie-1.webp",
        "w": 1600,
        "h": 1200,
        "legende": "Avec Frédéric Bousquet, médaillé olympique"
@@ -320,7 +320,7 @@ window.GALERIE = {
      "date": "Mai",
      "photos": [
       {
-       "src": "assets/galerie/2016/yvetot-1.webp",
+       "src": "2016/yvetot-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -331,12 +331,12 @@ window.GALERIE = {
      "date": "Octobre",
      "photos": [
       {
-       "src": "assets/galerie/2016/grand-quevilly-1.webp",
+       "src": "2016/grand-quevilly-1.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2016/grand-quevilly-2.webp",
+       "src": "2016/grand-quevilly-2.webp",
        "w": 1600,
        "h": 1200
       }
@@ -347,12 +347,12 @@ window.GALERIE = {
      "date": "Octobre",
      "photos": [
       {
-       "src": "assets/galerie/2016/stage-toussaint-1.webp",
+       "src": "2016/stage-toussaint-1.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2016/stage-toussaint-2.webp",
+       "src": "2016/stage-toussaint-2.webp",
        "w": 1600,
        "h": 1200
       }
@@ -363,7 +363,7 @@ window.GALERIE = {
      "date": "Décembre",
      "photos": [
       {
-       "src": "assets/galerie/2016/n2-cholet-1.webp",
+       "src": "2016/n2-cholet-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -374,7 +374,7 @@ window.GALERIE = {
      "date": "",
      "photos": [
       {
-       "src": "assets/galerie/2016/n2-st-nazaire-1.webp",
+       "src": "2016/n2-st-nazaire-1.webp",
        "w": 1200,
        "h": 1600
       }
@@ -390,12 +390,12 @@ window.GALERIE = {
      "date": "Janvier",
      "photos": [
       {
-       "src": "assets/galerie/2015/montivilliers-1.webp",
+       "src": "2015/montivilliers-1.webp",
        "w": 1600,
        "h": 975
       },
       {
-       "src": "assets/galerie/2015/montivilliers-2.webp",
+       "src": "2015/montivilliers-2.webp",
        "w": 1600,
        "h": 1200
       }
@@ -406,13 +406,13 @@ window.GALERIE = {
      "date": "Avril",
      "photos": [
       {
-       "src": "assets/galerie/2015/st-valery-1.webp",
+       "src": "2015/st-valery-1.webp",
        "w": 1200,
        "h": 1600,
        "legende": "Avec Alain Poyé, officiel"
       },
       {
-       "src": "assets/galerie/2015/st-valery-2.webp",
+       "src": "2015/st-valery-2.webp",
        "w": 1600,
        "h": 1200
       }
@@ -423,12 +423,12 @@ window.GALERIE = {
      "date": "13 juin",
      "photos": [
       {
-       "src": "assets/galerie/2015/reg-ete-1.webp",
+       "src": "2015/reg-ete-1.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2015/reg-ete-2.webp",
+       "src": "2015/reg-ete-2.webp",
        "w": 1600,
        "h": 1200
       }
@@ -439,7 +439,7 @@ window.GALERIE = {
      "date": "Juin",
      "photos": [
       {
-       "src": "assets/galerie/2015/le-havre-1.webp",
+       "src": "2015/le-havre-1.webp",
        "w": 1200,
        "h": 1600
       }
@@ -450,7 +450,7 @@ window.GALERIE = {
      "date": "Novembre",
      "photos": [
       {
-       "src": "assets/galerie/2015/dep-fecamp-1.webp",
+       "src": "2015/dep-fecamp-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -461,13 +461,13 @@ window.GALERIE = {
      "date": "Novembre",
      "photos": [
       {
-       "src": "assets/galerie/2015/interclubs-1.webp",
+       "src": "2015/interclubs-1.webp",
        "w": 1600,
        "h": 1200,
        "legende": "Les Masters avec Hugues Duboscq, médaillé olympique"
       },
       {
-       "src": "assets/galerie/2015/interclubs-2.webp",
+       "src": "2015/interclubs-2.webp",
        "w": 1600,
        "h": 1200,
        "legende": "L'équipe filles"
@@ -479,7 +479,7 @@ window.GALERIE = {
      "date": "Décembre",
      "photos": [
       {
-       "src": "assets/galerie/2015/reg-hiver-1.webp",
+       "src": "2015/reg-hiver-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -495,27 +495,27 @@ window.GALERIE = {
      "date": "16 mars",
      "photos": [
       {
-       "src": "assets/galerie/2014/promo76-1.webp",
+       "src": "2014/promo76-1.webp",
        "w": 641,
        "h": 823
       },
       {
-       "src": "assets/galerie/2014/promo76-2.webp",
+       "src": "2014/promo76-2.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2014/promo76-3.webp",
+       "src": "2014/promo76-3.webp",
        "w": 589,
        "h": 641
       },
       {
-       "src": "assets/galerie/2014/promo76-4.webp",
+       "src": "2014/promo76-4.webp",
        "w": 381,
        "h": 494
       },
       {
-       "src": "assets/galerie/2014/promo76-5.webp",
+       "src": "2014/promo76-5.webp",
        "w": 628,
        "h": 809
       }
@@ -526,7 +526,7 @@ window.GALERIE = {
      "date": "17 mai",
      "photos": [
       {
-       "src": "assets/galerie/2014/enf2-mai-1.webp",
+       "src": "2014/enf2-mai-1.webp",
        "w": 1600,
        "h": 1205
       }
@@ -537,27 +537,27 @@ window.GALERIE = {
      "date": "11 mai",
      "photos": [
       {
-       "src": "assets/galerie/2014/inter-ecoles-1.webp",
+       "src": "2014/inter-ecoles-1.webp",
        "w": 1121,
        "h": 819
       },
       {
-       "src": "assets/galerie/2014/inter-ecoles-2.webp",
+       "src": "2014/inter-ecoles-2.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2014/inter-ecoles-3.webp",
+       "src": "2014/inter-ecoles-3.webp",
        "w": 1017,
        "h": 767
       },
       {
-       "src": "assets/galerie/2014/inter-ecoles-4.webp",
+       "src": "2014/inter-ecoles-4.webp",
        "w": 1156,
        "h": 743
       },
       {
-       "src": "assets/galerie/2014/inter-ecoles-5.webp",
+       "src": "2014/inter-ecoles-5.webp",
        "w": 1109,
        "h": 728
       }
@@ -568,25 +568,25 @@ window.GALERIE = {
      "date": "Novembre",
      "photos": [
       {
-       "src": "assets/galerie/2014/interclubs-1.webp",
+       "src": "2014/interclubs-1.webp",
        "w": 1600,
        "h": 1200,
        "legende": "L'article de presse"
       },
       {
-       "src": "assets/galerie/2014/interclubs-2.webp",
+       "src": "2014/interclubs-2.webp",
        "w": 1600,
        "h": 1200,
        "legende": "L'équipe"
       },
       {
-       "src": "assets/galerie/2014/interclubs-3.webp",
+       "src": "2014/interclubs-3.webp",
        "w": 1200,
        "h": 1600,
        "legende": "Le t-shirt du coach"
       },
       {
-       "src": "assets/galerie/2014/interclubs-4.webp",
+       "src": "2014/interclubs-4.webp",
        "w": 1200,
        "h": 1600
       }
@@ -597,7 +597,7 @@ window.GALERIE = {
      "date": "Novembre",
      "photos": [
       {
-       "src": "assets/galerie/2014/competiteurs-1.webp",
+       "src": "2014/competiteurs-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -608,12 +608,12 @@ window.GALERIE = {
      "date": "29 novembre",
      "photos": [
       {
-       "src": "assets/galerie/2014/enf1-1.webp",
+       "src": "2014/enf1-1.webp",
        "w": 1115,
        "h": 836
       },
       {
-       "src": "assets/galerie/2014/enf1-2.webp",
+       "src": "2014/enf1-2.webp",
        "w": 1115,
        "h": 836
       }
@@ -624,7 +624,7 @@ window.GALERIE = {
      "date": "13 décembre",
      "photos": [
       {
-       "src": "assets/galerie/2014/enf2-dec-1.webp",
+       "src": "2014/enf2-dec-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -635,7 +635,7 @@ window.GALERIE = {
      "date": "14 décembre",
      "photos": [
       {
-       "src": "assets/galerie/2014/criterium-1.webp",
+       "src": "2014/criterium-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -651,27 +651,27 @@ window.GALERIE = {
      "date": "Mars",
      "photos": [
       {
-       "src": "assets/galerie/2013/france-masters-1.webp",
+       "src": "2013/france-masters-1.webp",
        "w": 1115,
        "h": 836
       },
       {
-       "src": "assets/galerie/2013/france-masters-2.webp",
+       "src": "2013/france-masters-2.webp",
        "w": 1600,
        "h": 1153
       },
       {
-       "src": "assets/galerie/2013/france-masters-3.webp",
+       "src": "2013/france-masters-3.webp",
        "w": 702,
        "h": 526
       },
       {
-       "src": "assets/galerie/2013/france-masters-4.webp",
+       "src": "2013/france-masters-4.webp",
        "w": 684,
        "h": 513
       },
       {
-       "src": "assets/galerie/2013/france-masters-5.webp",
+       "src": "2013/france-masters-5.webp",
        "w": 719,
        "h": 539
       }
@@ -682,27 +682,27 @@ window.GALERIE = {
      "date": "9 mai",
      "photos": [
       {
-       "src": "assets/galerie/2013/yvetot-1.webp",
+       "src": "2013/yvetot-1.webp",
        "w": 780,
        "h": 1039
       },
       {
-       "src": "assets/galerie/2013/yvetot-2.webp",
+       "src": "2013/yvetot-2.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2013/yvetot-3.webp",
+       "src": "2013/yvetot-3.webp",
        "w": 958,
        "h": 719
       },
       {
-       "src": "assets/galerie/2013/yvetot-4.webp",
+       "src": "2013/yvetot-4.webp",
        "w": 554,
        "h": 416
       },
       {
-       "src": "assets/galerie/2013/yvetot-5.webp",
+       "src": "2013/yvetot-5.webp",
        "w": 508,
        "h": 381
       }
@@ -713,32 +713,32 @@ window.GALERIE = {
      "date": "26 juin",
      "photos": [
       {
-       "src": "assets/galerie/2013/fete-1.webp",
+       "src": "2013/fete-1.webp",
        "w": 866,
        "h": 650
       },
       {
-       "src": "assets/galerie/2013/fete-2.webp",
+       "src": "2013/fete-2.webp",
        "w": 676,
        "h": 507
       },
       {
-       "src": "assets/galerie/2013/fete-3.webp",
+       "src": "2013/fete-3.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2013/fete-4.webp",
+       "src": "2013/fete-4.webp",
        "w": 832,
        "h": 624
       },
       {
-       "src": "assets/galerie/2013/fete-5.webp",
+       "src": "2013/fete-5.webp",
        "w": 832,
        "h": 624
       },
       {
-       "src": "assets/galerie/2013/fete-6.webp",
+       "src": "2013/fete-6.webp",
        "w": 781,
        "h": 679
       }
@@ -749,37 +749,37 @@ window.GALERIE = {
      "date": "13 septembre",
      "photos": [
       {
-       "src": "assets/galerie/2013/formerie-1.webp",
+       "src": "2013/formerie-1.webp",
        "w": 703,
        "h": 537
       },
       {
-       "src": "assets/galerie/2013/formerie-2.webp",
+       "src": "2013/formerie-2.webp",
        "w": 522,
        "h": 644
       },
       {
-       "src": "assets/galerie/2013/formerie-3.webp",
+       "src": "2013/formerie-3.webp",
        "w": 889,
        "h": 679
       },
       {
-       "src": "assets/galerie/2013/formerie-4.webp",
+       "src": "2013/formerie-4.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2013/formerie-5.webp",
+       "src": "2013/formerie-5.webp",
        "w": 667,
        "h": 905
       },
       {
-       "src": "assets/galerie/2013/formerie-6.webp",
+       "src": "2013/formerie-6.webp",
        "w": 836,
        "h": 603
       },
       {
-       "src": "assets/galerie/2013/formerie-7.webp",
+       "src": "2013/formerie-7.webp",
        "w": 780,
        "h": 598
       }
@@ -790,25 +790,25 @@ window.GALERIE = {
      "date": "Octobre",
      "photos": [
       {
-       "src": "assets/galerie/2013/groupes-1.webp",
+       "src": "2013/groupes-1.webp",
        "w": 1600,
        "h": 1200,
        "legende": "Groupe Ados du mercredi soir"
       },
       {
-       "src": "assets/galerie/2013/groupes-2.webp",
+       "src": "2013/groupes-2.webp",
        "w": 1600,
        "h": 1200,
        "legende": "Groupe Adultes loisirs"
       },
       {
-       "src": "assets/galerie/2013/groupes-3.webp",
+       "src": "2013/groupes-3.webp",
        "w": 1600,
        "h": 1200,
        "legende": "Groupe Compétiteurs"
       },
       {
-       "src": "assets/galerie/2013/groupes-4.webp",
+       "src": "2013/groupes-4.webp",
        "w": 1600,
        "h": 1200,
        "legende": "Groupe Jeunes loisirs"
@@ -825,27 +825,27 @@ window.GALERIE = {
      "date": "14 janvier",
      "photos": [
       {
-       "src": "assets/galerie/2012/avenirs-dieppe-janv-1.webp",
+       "src": "2012/avenirs-dieppe-janv-1.webp",
        "w": 733,
        "h": 550
       },
       {
-       "src": "assets/galerie/2012/avenirs-dieppe-janv-2.webp",
+       "src": "2012/avenirs-dieppe-janv-2.webp",
        "w": 733,
        "h": 550
       },
       {
-       "src": "assets/galerie/2012/avenirs-dieppe-janv-3.webp",
+       "src": "2012/avenirs-dieppe-janv-3.webp",
        "w": 733,
        "h": 550
       },
       {
-       "src": "assets/galerie/2012/avenirs-dieppe-janv-4.webp",
+       "src": "2012/avenirs-dieppe-janv-4.webp",
        "w": 733,
        "h": 550
       },
       {
-       "src": "assets/galerie/2012/avenirs-dieppe-janv-5.webp",
+       "src": "2012/avenirs-dieppe-janv-5.webp",
        "w": 733,
        "h": 550
       }
@@ -856,42 +856,42 @@ window.GALERIE = {
      "date": "3 février",
      "photos": [
       {
-       "src": "assets/galerie/2012/masters-pacy-1.webp",
+       "src": "2012/masters-pacy-1.webp",
        "w": 611,
        "h": 458
       },
       {
-       "src": "assets/galerie/2012/masters-pacy-2.webp",
+       "src": "2012/masters-pacy-2.webp",
        "w": 611,
        "h": 458
       },
       {
-       "src": "assets/galerie/2012/masters-pacy-3.webp",
+       "src": "2012/masters-pacy-3.webp",
        "w": 611,
        "h": 458
       },
       {
-       "src": "assets/galerie/2012/masters-pacy-4.webp",
+       "src": "2012/masters-pacy-4.webp",
        "w": 611,
        "h": 458
       },
       {
-       "src": "assets/galerie/2012/masters-pacy-5.webp",
+       "src": "2012/masters-pacy-5.webp",
        "w": 611,
        "h": 458
       },
       {
-       "src": "assets/galerie/2012/masters-pacy-6.webp",
+       "src": "2012/masters-pacy-6.webp",
        "w": 611,
        "h": 458
       },
       {
-       "src": "assets/galerie/2012/masters-pacy-7.webp",
+       "src": "2012/masters-pacy-7.webp",
        "w": 611,
        "h": 458
       },
       {
-       "src": "assets/galerie/2012/masters-pacy-8.webp",
+       "src": "2012/masters-pacy-8.webp",
        "w": 611,
        "h": 458
       }
@@ -902,32 +902,32 @@ window.GALERIE = {
      "date": "17 mars",
      "photos": [
       {
-       "src": "assets/galerie/2012/avenirs-estivale-1-1.webp",
+       "src": "2012/avenirs-estivale-1-1.webp",
        "w": 587,
        "h": 440
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-1-2.webp",
+       "src": "2012/avenirs-estivale-1-2.webp",
        "w": 756,
        "h": 567
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-1-3.webp",
+       "src": "2012/avenirs-estivale-1-3.webp",
        "w": 440,
        "h": 587
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-1-4.webp",
+       "src": "2012/avenirs-estivale-1-4.webp",
        "w": 532,
        "h": 709
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-1-5.webp",
+       "src": "2012/avenirs-estivale-1-5.webp",
        "w": 567,
        "h": 756
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-1-6.webp",
+       "src": "2012/avenirs-estivale-1-6.webp",
        "w": 732,
        "h": 549
       }
@@ -938,37 +938,37 @@ window.GALERIE = {
      "date": "Mars",
      "photos": [
       {
-       "src": "assets/galerie/2012/france-masters-1.webp",
+       "src": "2012/france-masters-1.webp",
        "w": 495,
        "h": 620
       },
       {
-       "src": "assets/galerie/2012/france-masters-2.webp",
+       "src": "2012/france-masters-2.webp",
        "w": 763,
        "h": 572
       },
       {
-       "src": "assets/galerie/2012/france-masters-3.webp",
+       "src": "2012/france-masters-3.webp",
        "w": 440,
        "h": 662
       },
       {
-       "src": "assets/galerie/2012/france-masters-4.webp",
+       "src": "2012/france-masters-4.webp",
        "w": 300,
        "h": 400
       },
       {
-       "src": "assets/galerie/2012/france-masters-5.webp",
+       "src": "2012/france-masters-5.webp",
        "w": 763,
        "h": 572
       },
       {
-       "src": "assets/galerie/2012/france-masters-6.webp",
+       "src": "2012/france-masters-6.webp",
        "w": 763,
        "h": 572
       },
       {
-       "src": "assets/galerie/2012/france-masters-7.webp",
+       "src": "2012/france-masters-7.webp",
        "w": 763,
        "h": 572
       }
@@ -979,7 +979,7 @@ window.GALERIE = {
      "date": "Avril",
      "photos": [
       {
-       "src": "assets/galerie/2012/paques-1.webp",
+       "src": "2012/paques-1.webp",
        "w": 1600,
        "h": 1200
       }
@@ -990,7 +990,7 @@ window.GALERIE = {
      "date": "7 avril",
      "photos": [
       {
-       "src": "assets/galerie/2012/avenirs-gournay-1.webp",
+       "src": "2012/avenirs-gournay-1.webp",
        "w": 1386,
        "h": 1039
       }
@@ -1001,32 +1001,32 @@ window.GALERIE = {
      "date": "12 mai",
      "photos": [
       {
-       "src": "assets/galerie/2012/avenirs-estivale-3-1.webp",
+       "src": "2012/avenirs-estivale-3-1.webp",
        "w": 528,
        "h": 396
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-3-2.webp",
+       "src": "2012/avenirs-estivale-3-2.webp",
        "w": 587,
        "h": 440
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-3-3.webp",
+       "src": "2012/avenirs-estivale-3-3.webp",
        "w": 528,
        "h": 396
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-3-4.webp",
+       "src": "2012/avenirs-estivale-3-4.webp",
        "w": 528,
        "h": 396
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-3-5.webp",
+       "src": "2012/avenirs-estivale-3-5.webp",
        "w": 587,
        "h": 440
       },
       {
-       "src": "assets/galerie/2012/avenirs-estivale-3-6.webp",
+       "src": "2012/avenirs-estivale-3-6.webp",
        "w": 528,
        "h": 396
       }
@@ -1037,42 +1037,42 @@ window.GALERIE = {
      "date": "17 novembre",
      "photos": [
       {
-       "src": "assets/galerie/2012/avenirs-nov-1.webp",
+       "src": "2012/avenirs-nov-1.webp",
        "w": 329,
        "h": 398
       },
       {
-       "src": "assets/galerie/2012/avenirs-nov-2.webp",
+       "src": "2012/avenirs-nov-2.webp",
        "w": 484,
        "h": 645
       },
       {
-       "src": "assets/galerie/2012/avenirs-nov-3.webp",
+       "src": "2012/avenirs-nov-3.webp",
        "w": 704,
        "h": 528
       },
       {
-       "src": "assets/galerie/2012/avenirs-nov-4.webp",
+       "src": "2012/avenirs-nov-4.webp",
        "w": 1600,
        "h": 1205
       },
       {
-       "src": "assets/galerie/2012/avenirs-nov-5.webp",
+       "src": "2012/avenirs-nov-5.webp",
        "w": 778,
        "h": 583
       },
       {
-       "src": "assets/galerie/2012/avenirs-nov-6.webp",
+       "src": "2012/avenirs-nov-6.webp",
        "w": 709,
        "h": 532
       },
       {
-       "src": "assets/galerie/2012/avenirs-nov-7.webp",
+       "src": "2012/avenirs-nov-7.webp",
        "w": 645,
        "h": 484
       },
       {
-       "src": "assets/galerie/2012/avenirs-nov-8.webp",
+       "src": "2012/avenirs-nov-8.webp",
        "w": 480,
        "h": 640
       }
@@ -1083,17 +1083,17 @@ window.GALERIE = {
      "date": "24 et 25 novembre",
      "photos": [
       {
-       "src": "assets/galerie/2012/dep-fecamp-1.webp",
+       "src": "2012/dep-fecamp-1.webp",
        "w": 1021,
        "h": 766
       },
       {
-       "src": "assets/galerie/2012/dep-fecamp-2.webp",
+       "src": "2012/dep-fecamp-2.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2012/dep-fecamp-3.webp",
+       "src": "2012/dep-fecamp-3.webp",
        "w": 788,
        "h": 1051
       }
@@ -1109,12 +1109,12 @@ window.GALERIE = {
      "date": "Septembre",
      "photos": [
       {
-       "src": "assets/galerie/2011/formerie-1.webp",
+       "src": "2011/formerie-1.webp",
        "w": 1600,
        "h": 1200
       },
       {
-       "src": "assets/galerie/2011/formerie-2.webp",
+       "src": "2011/formerie-2.webp",
        "w": 1600,
        "h": 1200,
        "legende": "Avec Alain Bernard, champion olympique"
@@ -1126,37 +1126,37 @@ window.GALERIE = {
      "date": "26 novembre",
      "photos": [
       {
-       "src": "assets/galerie/2011/avenirs-dieppe-nov-1.webp",
+       "src": "2011/avenirs-dieppe-nov-1.webp",
        "w": 686,
        "h": 515
       },
       {
-       "src": "assets/galerie/2011/avenirs-dieppe-nov-2.webp",
+       "src": "2011/avenirs-dieppe-nov-2.webp",
        "w": 686,
        "h": 515
       },
       {
-       "src": "assets/galerie/2011/avenirs-dieppe-nov-3.webp",
+       "src": "2011/avenirs-dieppe-nov-3.webp",
        "w": 686,
        "h": 515
       },
       {
-       "src": "assets/galerie/2011/avenirs-dieppe-nov-4.webp",
+       "src": "2011/avenirs-dieppe-nov-4.webp",
        "w": 686,
        "h": 515
       },
       {
-       "src": "assets/galerie/2011/avenirs-dieppe-nov-5.webp",
+       "src": "2011/avenirs-dieppe-nov-5.webp",
        "w": 686,
        "h": 515
       },
       {
-       "src": "assets/galerie/2011/avenirs-dieppe-nov-6.webp",
+       "src": "2011/avenirs-dieppe-nov-6.webp",
        "w": 686,
        "h": 515
       },
       {
-       "src": "assets/galerie/2011/avenirs-dieppe-nov-7.webp",
+       "src": "2011/avenirs-dieppe-nov-7.webp",
        "w": 686,
        "h": 515
       }
@@ -1167,7 +1167,7 @@ window.GALERIE = {
      "date": "Décembre",
      "photos": [
       {
-       "src": "assets/galerie/2011/telethon-1.webp",
+       "src": "2011/telethon-1.webp",
        "w": 1600,
        "h": 1200
       }
