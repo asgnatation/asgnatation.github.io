@@ -504,16 +504,15 @@ a.next:hover{transform:translateY(-3px)}
 .alb:hover .alb__cover i, .alb:focus-visible .alb__cover i{transform:rotate(7deg) translate(14px,-8px)}
 .alb__body{display:flex; flex-direction:column; gap:4px; padding:14px 2px 0}
 .alb__date{font:600 .72rem var(--f-mono); letter-spacing:.05em; text-transform:uppercase; color:var(--pool)}
+.alb__nb{color:var(--muted); white-space:nowrap}
+.alb__nb::before{content:" · "}
 .alb__title{font:700 1.02rem/1.25 var(--f-display); letter-spacing:-.01em; text-wrap:balance}
-.alb__count{display:flex; align-items:baseline; gap:4px; position:absolute; z-index:3; right:10px; bottom:10px; padding:5px 10px; border-radius:999px; white-space:nowrap; box-shadow:0 6px 16px -8px rgba(0,0,0,.5); transition:transform .45s cubic-bezier(.2,.9,.3,1.2); background:rgba(255,255,255,.92); color:#05253A; font:800 1rem/1 var(--f-display); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px)}
-.alb__count small{font:600 .58rem var(--f-mono); letter-spacing:.08em; text-transform:uppercase}
-.alb:hover .alb__count, .alb:focus-visible .alb__count{transform:translateY(-6px)}
 /* anciens navigateurs sans aspect-ratio : la vignette garde sa hauteur */
 @supports not (aspect-ratio:1/1){ .alb__cover{height:0; padding-top:75%} }
 @media (max-width:640px){
   .gal__head{align-items:stretch} .gal__nav{width:100%} .gal__picker{flex:1} .gal__year{width:100%; justify-content:space-between}
   .gal__menu{left:-54px; right:auto; width:calc(100vw - 32px)} .gal__grid{grid-template-columns:1fr 1fr; gap:16px 12px}
-  .alb__title{font-size:.88rem} .alb__body{padding:10px 2px 0} .alb__count{padding:4px 8px; font-size:.8rem; right:7px; bottom:7px} .alb__count small{font-size:.52rem}
+  .alb__title{font-size:.88rem} .alb__body{padding:10px 2px 0} .alb__nb{display:block; margin-top:2px} .alb__nb::before{content:none}
   .gal__mark{display:none}
 }
 /* téléphone : lignes du grand titre moins serrées */
