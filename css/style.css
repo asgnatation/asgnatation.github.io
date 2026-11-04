@@ -502,15 +502,18 @@ a.next:hover{transform:translateY(-3px)}
 .alb__cover i{position:absolute; inset:0; z-index:1; border-radius:18px; background:center/cover var(--aqua); border:4px solid var(--surface); transform:rotate(3.5deg) translate(6px,-4px); box-shadow:0 10px 24px -18px rgba(var(--shadow),.8); transition:transform .45s cubic-bezier(.2,.9,.3,1.2)}
 .alb:hover .alb__cover img, .alb:focus-visible .alb__cover img{transform:translateY(-6px) rotate(-1.2deg)}
 .alb:hover .alb__cover i, .alb:focus-visible .alb__cover i{transform:rotate(7deg) translate(14px,-8px)}
-.alb__body{display:flex; flex-direction:column; gap:4px; padding:14px 56px 0 2px}
+.alb__body{display:flex; flex-direction:column; gap:4px; padding:14px 2px 0}
 .alb__date{font:600 .72rem var(--f-mono); letter-spacing:.05em; text-transform:uppercase; color:var(--pool)}
 .alb__title{font:700 1.02rem/1.25 var(--f-display); letter-spacing:-.01em; text-wrap:balance}
-.alb__count{display:flex; flex-direction:column; align-items:center; position:absolute; z-index:3; right:12px; top:12px; padding:7px 10px; border-radius:12px; background:rgba(255,255,255,.92); color:#05253A; font:800 1rem/1 var(--f-display); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px)}
-.alb__count small{font:600 .55rem var(--f-mono); letter-spacing:.08em; text-transform:uppercase; margin-top:3px}
+.alb__count{display:flex; align-items:baseline; gap:4px; position:absolute; z-index:3; right:10px; bottom:10px; padding:5px 10px; border-radius:999px; white-space:nowrap; box-shadow:0 6px 16px -8px rgba(0,0,0,.5); transition:transform .45s cubic-bezier(.2,.9,.3,1.2); background:rgba(255,255,255,.92); color:#05253A; font:800 1rem/1 var(--f-display); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px)}
+.alb__count small{font:600 .58rem var(--f-mono); letter-spacing:.08em; text-transform:uppercase}
+.alb:hover .alb__count, .alb:focus-visible .alb__count{transform:translateY(-6px)}
+/* anciens navigateurs sans aspect-ratio : la vignette garde sa hauteur */
+@supports not (aspect-ratio:1/1){ .alb__cover{height:0; padding-top:75%} }
 @media (max-width:640px){
   .gal__head{align-items:stretch} .gal__nav{width:100%} .gal__picker{flex:1} .gal__year{width:100%; justify-content:space-between}
   .gal__menu{left:-54px; right:auto; width:calc(100vw - 32px)} .gal__grid{grid-template-columns:1fr 1fr; gap:16px 12px}
-  .alb__title{font-size:.88rem} .alb__body{padding:10px 2px 0} .alb__count{padding:5px 8px; font-size:.85rem; right:8px; top:8px}
+  .alb__title{font-size:.88rem} .alb__body{padding:10px 2px 0} .alb__count{padding:4px 8px; font-size:.8rem; right:7px; bottom:7px} .alb__count small{font-size:.52rem}
   .gal__mark{display:none}
 }
 /* téléphone : lignes du grand titre moins serrées */
