@@ -53,8 +53,8 @@
     grid.innerHTML = y.albums.map((a, ai) => {
       const c = a.photos[0], many = a.photos.length > 1;
       return `<button class="alb${many ? " alb--stack" : ""}" data-a="${ai}" aria-label="Ouvrir l'album ${esc(a.titre)}, ${plural(a.photos.length, "photo", "photos")}">
-        <span class="alb__cover">${many ? `<i style="background-image:url('${esc(sm(a.photos[1].src))}')"></i>` : ""}<img src="${esc(sm(c.src))}" alt="" loading="lazy" width="${c.w || ""}" height="${c.h || ""}"><span class="alb__count">${a.photos.length} <small>${a.photos.length > 1 ? "photos" : "photo"}</small></span></span>
-        <span class="alb__body"><span class="alb__date">${esc(a.date ? a.date + " " + y.annee : y.annee)}</span><b class="alb__title">${esc(a.titre)}</b></span>
+        <span class="alb__cover">${many ? `<i style="background-image:url('${esc(sm(a.photos[1].src))}')"></i>` : ""}<img src="${esc(sm(c.src))}" alt="" loading="lazy" width="${c.w || ""}" height="${c.h || ""}"></span>
+        <span class="alb__body"><span class="alb__date">${esc(a.date ? a.date + " " + y.annee : y.annee)}<span class="alb__nb">${plural(a.photos.length, "photo", "photos")}</span></span><b class="alb__title">${esc(a.titre)}</b></span>
       </button>`;
     }).join("");
   };
