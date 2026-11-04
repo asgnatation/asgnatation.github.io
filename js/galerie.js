@@ -73,41 +73,74 @@
   render();
   grid.addEventListener("click", (e) => { const b = e.target.closest("[data-a]"); if (b) openViewer(years[yi], +b.dataset.a, 0); });
 
-  // ---------- visionneuse ----------
-  const V = $("#viewer"), vImg = $("#vw-img"), vStrip = $("#vw-strip");
-  let alb = null, pi = 0, yearOf = null;
-  const showPhoto = (i) => {
-    pi = (i + alb.photos.length) % alb.photos.length;
-    const p = alb.photos[pi];
-    vImg.classList.add("is-loading");
-    const im = new Image(); im.onload = () => { vImg.src = p.src; vImg.classList.remove("is-loading"); }; im.src = p.src;
-    vImg.alt = p.legende || `${alb.titre}, photo ${pi + 1}`;
-    $("#vw-count").textContent = `${pi + 1} / ${alb.photos.length}`;
-    $("#vw-cap").textContent = p.legende || "";
-    $("#vw-cap").hidden = !p.legende;
-    [...vStrip.children].forEach((t, k) => { t.setAttribute("aria-current", k === pi); if (k === pi) t.scrollIntoView({ block: "nearest", inline: "center", behavior: reduce ? "auto" : "smooth" }); });
-    const nx = alb.photos[(pi + 1) % alb.photos.length]; if (nx) new Image().src = nx.src;
+  // ---------- visionneuse (défilement natif au doigt, adapté au paysage comme au portrait) ----------
+  const V = $("#viewer"), vStrip = $("#vw-strip");
+  const track = document.createElement("div");
+  track.className = "vw__track"; track.id = "vw-track";
+  $(".vw__fig").replaceWith(track);
+  const vCap = document.createElement("p");
+  vCap.className = "vw__cap"; vCap.id = "vw-cap"; vCap.hidden = true;
+  $(".vw__stage").after(vCap);
+  let alb = null, pi = 0, tgt = null, yearOf = null;
+
+  const load = (k) => {
+    const slide = track.children[k]; if (!slide || slide.dataset.loaded) return;
+    slide.dataset.loaded = "1";
+    const p = alb.photos[k], img = slide.querySelector("img");
+    img.src = sm(p.src); // miniature déjà en cache : affichage immédiat
+    const full = new Image();
+    full.onload = () => { img.src = p.src; slide.classList.add("is-sharp"); };
+    full.src = p.src;
   };
+  const update = (i) => {
+    pi = i;
+    const p = alb.photos[pi];
+    $("#vw-count").textContent = `${pi + 1} / ${alb.photos.length}`;
+    vCap.textContent = p.legende || ""; vCap.hidden = !p.legende;
+    [pi, pi + 1, pi - 1, pi + 2].forEach(load);
+    [...vStrip.children].forEach((t, k) => t.setAttribute("aria-current", k === pi));
+    const t = vStrip.children[pi];
+    if (t) vStrip.scrollTo({ left: t.offsetLeft - (vStrip.clientWidth - t.offsetWidth) / 2, behavior: reduce ? "auto" : "smooth" });
+  };
+  const goTo = (i, smooth = true) => {
+    const n = alb.photos.length; i = (i + n) % n; tgt = smooth ? i : null;
+    track.scrollTo({ left: i * track.clientWidth, behavior: smooth && !reduce ? "smooth" : "auto" });
+    if (!smooth) update(i);
+  };
+  let ticking = false;
+  track.addEventListener("scroll", () => {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(() => {
+      ticking = false;
+      if (!alb) return;
+      const i = Math.round(track.scrollLeft / track.clientWidth);
+      if (i === tgt) tgt = null;
+      if (i !== pi && i >= 0 && i < alb.photos.length) update(i);
+    });
+  }, { passive: true });
+  addEventListener("resize", () => { if (V.open && alb) track.scrollLeft = pi * track.clientWidth; });
+
   const openViewer = (y, ai, i) => {
-    yearOf = y; alb = y.albums[ai];
+    yearOf = y; alb = y.albums[ai]; pi = -1;
     $("#vw-title").textContent = alb.titre;
     $("#vw-date").textContent = alb.date ? `${alb.date} ${y.annee}` : y.annee;
     const one = alb.photos.length < 2;
     V.classList.toggle("is-single", one);
+    track.innerHTML = alb.photos.map((p, k) => `<div class="vw__slide"><img alt="${esc(p.legende || `${alb.titre}, photo ${k + 1}`)}" decoding="async" draggable="false"></div>`).join("");
     vStrip.innerHTML = one ? "" : alb.photos.map((p, k) => `<button data-k="${k}" aria-label="Photo ${k + 1}"><img src="${esc(sm(p.src))}" alt="" loading="lazy"></button>`).join("");
     V.showModal?.(); document.documentElement.style.overflow = "hidden"; window.__lenis?.stop();
-    showPhoto(i);
+    requestAnimationFrame(() => goTo(i, false));
   };
-  V.addEventListener("close", () => { document.documentElement.style.overflow = ""; window.__lenis?.start(); });
+  V.addEventListener("close", () => { document.documentElement.style.overflow = ""; window.__lenis?.start(); alb = null; track.innerHTML = ""; });
   $("#vw-close").addEventListener("click", () => V.close());
-  $("#vw-prev").addEventListener("click", () => showPhoto(pi - 1));
-  $("#vw-next").addEventListener("click", () => showPhoto(pi + 1));
-  vStrip.addEventListener("click", (e) => { const b = e.target.closest("[data-k]"); if (b) showPhoto(+b.dataset.k); });
-  V.addEventListener("keydown", (e) => { if (e.key === "ArrowLeft") showPhoto(pi - 1); if (e.key === "ArrowRight") showPhoto(pi + 1); });
-  V.addEventListener("click", (e) => { if (e.target === V || e.target.classList.contains("vw__stage")) V.close(); });
-  let tx = null;
-  V.addEventListener("touchstart", (e) => { tx = e.touches[0].clientX; }, { passive: true });
-  V.addEventListener("touchend", (e) => { if (tx == null) return; const dx = e.changedTouches[0].clientX - tx; if (Math.abs(dx) > 50) showPhoto(pi + (dx < 0 ? 1 : -1)); tx = null; });
+  $("#vw-prev").addEventListener("click", () => goTo((tgt ?? pi) - 1));
+  $("#vw-next").addEventListener("click", () => goTo((tgt ?? pi) + 1));
+  vStrip.addEventListener("click", (e) => { const b = e.target.closest("[data-k]"); if (b) goTo(+b.dataset.k); });
+  V.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowLeft") { e.preventDefault(); goTo((tgt ?? pi) - 1); }
+    if (e.key === "ArrowRight") { e.preventDefault(); goTo((tgt ?? pi) + 1); }
+  });
+  V.addEventListener("click", (e) => { if (e.target === V) V.close(); });
 
   // lien direct vers une année : asgnatation.fr/#galerie-2014
   const h = location.hash.match(/^#galerie-(\d{4})$/);
