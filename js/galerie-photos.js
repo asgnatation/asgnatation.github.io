@@ -23,56 +23,47 @@ window.GALERIE = {
       {
        "src": "assets/img/equipe-fresque.webp",
        "w": 828,
-       "h": 553,
-       "legende": "Les nageurs de l'ASG devant la fresque du nageur"
+       "h": 553
       },
       {
        "src": "assets/img/eau-libre-depart.webp",
        "w": 828,
-       "h": 812,
-       "legende": "Départ d'une course en eau libre sur un plan d'eau"
+       "h": 812
       },
       {
        "src": "assets/img/groupe-bonnets.webp",
        "w": 828,
-       "h": 656,
-       "legende": "Les nageurs du club, bras levés, au bord du bassin"
+       "h": 656
       },
       {
        "src": "assets/img/podium-eau-libre.webp",
        "w": 828,
-       "h": 812,
-       "legende": "David sur la plus haute marche du podium en eau libre"
+       "h": 812
       },
       {
        "src": "assets/img/bord-bassin.webp",
        "w": 828,
-       "h": 608,
-       "legende": "Trois jeunes nageurs et leur coach au bord du bassin"
+       "h": 608
       },
       {
        "src": "assets/img/fete-ballons.webp",
        "w": 828,
-       "h": 569,
-       "legende": "Fête du club dans le bassin avec des ballons"
+       "h": 569
       },
       {
        "src": "assets/img/nogent-equipe.webp",
        "w": 828,
-       "h": 812,
-       "legende": "L'équipe à Nogent-sur-Oise avec le nouveau maillot"
+       "h": 812
       },
       {
        "src": "assets/img/fete-club-medailles.webp",
        "w": 828,
-       "h": 612,
-       "legende": "Les nageurs médaillés après la compétition interne"
+       "h": 612
       },
       {
        "src": "assets/img/trophees-eau-libre.webp",
        "w": 828,
-       "h": 819,
-       "legende": "Trophées après la compétition d'eau libre"
+       "h": 819
       }
      ]
     },
@@ -83,8 +74,7 @@ window.GALERIE = {
       {
        "src": "2026/paques-1.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "Groupe Ados loisirs"
+       "h": 1200
       }
      ]
     },
@@ -111,8 +101,7 @@ window.GALERIE = {
       {
        "src": "2026/reg-benjamins-1.webp",
        "w": 1600,
-       "h": 1206,
-       "legende": "Vedran K., qualifié pour la Coupe des régions"
+       "h": 1206
       }
      ]
     }
@@ -206,8 +195,7 @@ window.GALERIE = {
       {
        "src": "2024/grandvilliers-8.webp",
        "w": 1600,
-       "h": 1066,
-       "legende": "Nos super-héros"
+       "h": 1066
       }
      ]
     }
@@ -277,8 +265,7 @@ window.GALERIE = {
       {
        "src": "2019/presse-1.webp",
        "w": 1460,
-       "h": 1600,
-       "legende": "Article de L'Éclaireur"
+       "h": 1600
       }
      ]
     }
@@ -310,8 +297,7 @@ window.GALERIE = {
       {
        "src": "2016/courbevoie-1.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "Avec Frédéric Bousquet, médaillé olympique"
+       "h": 1200
       }
      ]
     },
@@ -408,8 +394,7 @@ window.GALERIE = {
       {
        "src": "2015/st-valery-1.webp",
        "w": 1200,
-       "h": 1600,
-       "legende": "Avec Alain Poyé, officiel"
+       "h": 1600
       },
       {
        "src": "2015/st-valery-2.webp",
@@ -463,14 +448,12 @@ window.GALERIE = {
       {
        "src": "2015/interclubs-1.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "Les Masters avec Hugues Duboscq, médaillé olympique"
+       "h": 1200
       },
       {
        "src": "2015/interclubs-2.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "L'équipe filles"
+       "h": 1200
       }
      ]
     },
@@ -570,20 +553,17 @@ window.GALERIE = {
       {
        "src": "2014/interclubs-1.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "L'article de presse"
+       "h": 1200
       },
       {
        "src": "2014/interclubs-2.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "L'équipe"
+       "h": 1200
       },
       {
        "src": "2014/interclubs-3.webp",
        "w": 1200,
-       "h": 1600,
-       "legende": "Le t-shirt du coach"
+       "h": 1600
       },
       {
        "src": "2014/interclubs-4.webp",
@@ -792,26 +772,22 @@ window.GALERIE = {
       {
        "src": "2013/groupes-1.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "Groupe Ados du mercredi soir"
+       "h": 1200
       },
       {
        "src": "2013/groupes-2.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "Groupe Adultes loisirs"
+       "h": 1200
       },
       {
        "src": "2013/groupes-3.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "Groupe Compétiteurs"
+       "h": 1200
       },
       {
        "src": "2013/groupes-4.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "Groupe Jeunes loisirs"
+       "h": 1200
       }
      ]
     }
@@ -1116,8 +1092,7 @@ window.GALERIE = {
       {
        "src": "2011/formerie-2.webp",
        "w": 1600,
-       "h": 1200,
-       "legende": "Avec Alain Bernard, champion olympique"
+       "h": 1200
       }
      ]
     },
