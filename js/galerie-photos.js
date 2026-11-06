@@ -1192,11 +1192,6 @@ window.GALERIE = {
        "src": "2023/2023-operation-tous-en-maill-eau-sept-20-1.webp",
        "w": 960,
        "h": 640
-      },
-      {
-       "src": "2023/2023-operation-tous-en-maill-eau-sept-20-2.webp",
-       "w": 1200,
-       "h": 1600
       }
      ]
     },
