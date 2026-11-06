@@ -17,57 +17,6 @@ window.GALERIE = {
    "annee": "2026",
    "albums": [
     {
-     "titre": "La saison en images",
-     "date": "Juin à octobre",
-     "photos": [
-      {
-       "src": "assets/img/equipe-fresque.webp",
-       "w": 828,
-       "h": 553
-      },
-      {
-       "src": "assets/img/eau-libre-depart.webp",
-       "w": 828,
-       "h": 812
-      },
-      {
-       "src": "assets/img/groupe-bonnets.webp",
-       "w": 828,
-       "h": 656
-      },
-      {
-       "src": "assets/img/podium-eau-libre.webp",
-       "w": 828,
-       "h": 812
-      },
-      {
-       "src": "assets/img/bord-bassin.webp",
-       "w": 828,
-       "h": 608
-      },
-      {
-       "src": "assets/img/fete-ballons.webp",
-       "w": 828,
-       "h": 569
-      },
-      {
-       "src": "assets/img/nogent-equipe.webp",
-       "w": 828,
-       "h": 812
-      },
-      {
-       "src": "assets/img/fete-club-medailles.webp",
-       "w": 828,
-       "h": 612
-      },
-      {
-       "src": "assets/img/trophees-eau-libre.webp",
-       "w": 828,
-       "h": 819
-      }
-     ]
-    },
-    {
      "titre": "Fête de Pâques",
      "date": "Avril",
      "photos": [
@@ -298,6 +247,11 @@ window.GALERIE = {
        "src": "2016/courbevoie-1.webp",
        "w": 1600,
        "h": 1200
+      },
+      {
+       "src": "2016/stage-toussaint-2.webp",
+       "w": 1600,
+       "h": 1200
       }
      ]
     },
@@ -334,11 +288,6 @@ window.GALERIE = {
      "photos": [
       {
        "src": "2016/stage-toussaint-1.webp",
-       "w": 1600,
-       "h": 1200
-      },
-      {
-       "src": "2016/stage-toussaint-2.webp",
        "w": 1600,
        "h": 1200
       }
