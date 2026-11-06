@@ -17,6 +17,118 @@ window.GALERIE = {
    "annee": "2026",
    "albums": [
     {
+     "titre": "Meeting de Montivilliers",
+     "date": "Janvier",
+     "photos": [
+      {
+       "src": "2026/2026-meeting-montivilliers-janv-2026-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-meeting-montivilliers-janv-2026-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-meeting-montivilliers-janv-2026-3.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-meeting-montivilliers-janv-2026-4.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-meeting-montivilliers-janv-2026-5.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-meeting-montivilliers-janv-2026-6.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-meeting-montivilliers-janv-2026-7.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-meeting-montivilliers-janv-2026-8.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-meeting-montivilliers-janv-2026-9.webp",
+       "w": 1600,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Championnats de Seine-Maritime à Grand-Quevilly",
+     "date": "Mars",
+     "photos": [
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-1.webp",
+       "w": 1021,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-2.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-5.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-6.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-7.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-8.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-9.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-10.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-chpts-76-grand-quevilly-mars-2026-11.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
      "titre": "Fête de Pâques",
      "date": "Avril",
      "photos": [
@@ -24,6 +136,129 @@ window.GALERIE = {
        "src": "2026/paques-1.webp",
        "w": 1600,
        "h": 1200
+      },
+      {
+       "src": "2026/2026-paques-2026-1.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-paques-2026-2.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-paques-2026-3.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-paques-2026-4.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-paques-2026-5.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-paques-2026-6.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-paques-2026-7.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-paques-2026-8.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-paques-2026-9.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-paques-2026-10.webp",
+       "w": 1600,
+       "h": 1200
+      }
+     ]
+    },
+    {
+     "titre": "Compétition Avenirs",
+     "date": "Mai",
+     "photos": [
+      {
+       "src": "2026/2026-competition-avenirs-mai-2026-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-avenirs-mai-2026-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-avenirs-mai-2026-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-avenirs-mai-2026-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-avenirs-mai-2026-5.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-avenirs-mai-2026-6.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Eau libre à Jumièges",
+     "date": "Mai",
+     "photos": [
+      {
+       "src": "2026/2026-competition-eau-libre-jumieges-mai--1.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-competition-eau-libre-jumieges-mai--2.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Meeting du sprint à Yvetot",
+     "date": "Mai",
+     "photos": [
+      {
+       "src": "2026/2026-meeting-du-sprint-yvetot-mai-2026-1.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-meeting-du-sprint-yvetot-mai-2026-2.webp",
+       "w": 1425,
+       "h": 1077
+      },
+      {
+       "src": "2026/2026-meeting-du-sprint-yvetot-mai-2026-3.webp",
+       "w": 1200,
+       "h": 1600
       }
      ]
     },
@@ -44,6 +279,120 @@ window.GALERIE = {
      ]
     },
     {
+     "titre": "Eau libre à Beauvais",
+     "date": "Juin",
+     "photos": [
+      {
+       "src": "2026/2026-competition-eau-libre-beauvais-juin-1.webp",
+       "w": 1461,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-eau-libre-beauvais-juin-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-eau-libre-beauvais-juin-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-eau-libre-beauvais-juin-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-eau-libre-beauvais-juin-5.webp",
+       "w": 1461,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-competition-eau-libre-beauvais-juin-6.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Entraînement swim run",
+     "date": "Juin",
+     "photos": [
+      {
+       "src": "2026/2026-entrainement-swim-run-juin-2026-1.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2026/2026-entrainement-swim-run-juin-2026-2.webp",
+       "w": 720,
+       "h": 960
+      },
+      {
+       "src": "2026/2026-entrainement-swim-run-juin-2026-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-entrainement-swim-run-juin-2026-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-entrainement-swim-run-juin-2026-5.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-entrainement-swim-run-juin-2026-6.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Forum des associations",
+     "date": "Septembre",
+     "photos": [
+      {
+       "src": "2026/2026-forum-des-associations-sept-2026-1.webp",
+       "w": 1600,
+       "h": 931
+      },
+      {
+       "src": "2026/2026-forum-des-associations-sept-2026-2.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/2026-forum-des-associations-sept-2026-3.webp",
+       "w": 1600,
+       "h": 1200
+      }
+     ]
+    },
+    {
+     "titre": "Meeting de Nogent",
+     "date": "Octobre",
+     "photos": [
+      {
+       "src": "2026/2026-meeting-de-nogent-oct-2026-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-meeting-de-nogent-oct-2026-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/2026-meeting-de-nogent-oct-2026-3.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
      "titre": "Championnats régionaux Benjamins",
      "date": "",
      "photos": [
@@ -60,6 +409,144 @@ window.GALERIE = {
    "annee": "2025",
    "albums": [
     {
+     "titre": "Rencontre avec Alexis Hanquinquant, triple champion paralympique de triathlon",
+     "date": "Avril",
+     "photos": [
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-1.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-2.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-5.webp",
+       "w": 720,
+       "h": 960
+      },
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-6.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-7.webp",
+       "w": 1600,
+       "h": 1081
+      },
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-8.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-9.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-rencontre-d-alexis-hanquinquant-tri-10.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Meeting de Nogent",
+     "date": "Octobre",
+     "photos": [
+      {
+       "src": "2025/2025-meeting-de-nogent-oct-2025-1.webp",
+       "w": 898,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-meeting-de-nogent-oct-2025-2.webp",
+       "w": 1600,
+       "h": 1202
+      },
+      {
+       "src": "2025/2025-meeting-de-nogent-oct-2025-3.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-meeting-de-nogent-oct-2025-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-meeting-de-nogent-oct-2025-5.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-meeting-de-nogent-oct-2025-6.webp",
+       "w": 765,
+       "h": 1020
+      },
+      {
+       "src": "2025/2025-meeting-de-nogent-oct-2025-7.webp",
+       "w": 765,
+       "h": 1020
+      },
+      {
+       "src": "2025/2025-meeting-de-nogent-oct-2025-8.webp",
+       "w": 406,
+       "h": 541
+      }
+     ]
+    },
+    {
+     "titre": "Opération « Tous en maill'eau »",
+     "date": "Octobre",
+     "photos": [
+      {
+       "src": "2025/2025-operation-tous-en-maill-eau-oct-202-1.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-operation-tous-en-maill-eau-oct-202-2.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-operation-tous-en-maill-eau-oct-202-3.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-operation-tous-en-maill-eau-oct-202-4.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-operation-tous-en-maill-eau-oct-202-5.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-operation-tous-en-maill-eau-oct-202-6.webp",
+       "w": 1600,
+       "h": 1200
+      }
+     ]
+    },
+    {
      "titre": "Championnats régionaux à Granville",
      "date": "Novembre",
      "photos": [
@@ -67,6 +554,104 @@ window.GALERIE = {
        "src": "2025/reg-granville-1.webp",
        "w": 1200,
        "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Championnats Avenirs",
+     "date": "Novembre",
+     "photos": [
+      {
+       "src": "2025/2025-chpts-avenirs-nov-2025-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-chpts-avenirs-nov-2025-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-chpts-avenirs-nov-2025-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-chpts-avenirs-nov-2025-4.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Compétition Avenirs au Havre",
+     "date": "Décembre",
+     "photos": [
+      {
+       "src": "2025/2025-competition-avenirs-dec-2025-au-hav-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-competition-avenirs-dec-2025-au-hav-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-competition-avenirs-dec-2025-au-hav-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-competition-avenirs-dec-2025-au-hav-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-competition-avenirs-dec-2025-au-hav-5.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Meeting Maîtres",
+     "date": "Décembre",
+     "photos": [
+      {
+       "src": "2025/2025-meeting-maitres-dec-2025-1.webp",
+       "w": 600,
+       "h": 800
+      },
+      {
+       "src": "2025/2025-meeting-maitres-dec-2025-2.webp",
+       "w": 600,
+       "h": 800
+      },
+      {
+       "src": "2025/2025-meeting-maitres-dec-2025-3.webp",
+       "w": 1024,
+       "h": 770
+      },
+      {
+       "src": "2025/2025-meeting-maitres-dec-2025-4.webp",
+       "w": 1343,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-meeting-maitres-dec-2025-5.webp",
+       "w": 600,
+       "h": 800
+      },
+      {
+       "src": "2025/2025-meeting-maitres-dec-2025-6.webp",
+       "w": 1024,
+       "h": 768
+      },
+      {
+       "src": "2025/2025-meeting-maitres-dec-2025-7.webp",
+       "w": 768,
+       "h": 1024
       }
      ]
     },
@@ -96,12 +681,94 @@ window.GALERIE = {
        "h": 1200
       }
      ]
+    },
+    {
+     "titre": "Interclubs toutes catégories",
+     "date": "",
+     "photos": [
+      {
+       "src": "2025/2025-interclubs-tc-2025-1.webp",
+       "w": 1225,
+       "h": 922
+      },
+      {
+       "src": "2025/2025-interclubs-tc-2025-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2025/2025-interclubs-tc-2025-3.webp",
+       "w": 824,
+       "h": 1099
+      },
+      {
+       "src": "2025/2025-interclubs-tc-2025-4.webp",
+       "w": 1005,
+       "h": 1341
+      },
+      {
+       "src": "2025/2025-interclubs-tc-2025-5.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-interclubs-tc-2025-6.webp",
+       "w": 1600,
+       "h": 1202
+      },
+      {
+       "src": "2025/2025-interclubs-tc-2025-7.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-interclubs-tc-2025-8.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2025/2025-interclubs-tc-2025-9.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
     }
    ]
   },
   {
    "annee": "2024",
    "albums": [
+    {
+     "titre": "Compétition Avenirs à Grand-Quevilly",
+     "date": "Janvier",
+     "photos": [
+      {
+       "src": "2024/2024-competition-avenirs-grd-quevilly-ja-1.webp",
+       "w": 1600,
+       "h": 1202
+      },
+      {
+       "src": "2024/2024-competition-avenirs-grd-quevilly-ja-2.webp",
+       "w": 1440,
+       "h": 1086
+      },
+      {
+       "src": "2024/2024-competition-avenirs-grd-quevilly-ja-3.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-competition-avenirs-grd-quevilly-ja-4.webp",
+       "w": 1440,
+       "h": 1086
+      },
+      {
+       "src": "2024/2024-competition-avenirs-grd-quevilly-ja-5.webp",
+       "w": 1440,
+       "h": 1080
+      }
+     ]
+    },
     {
      "titre": "Meeting de Grandvilliers",
      "date": "10 et 11 février",
@@ -147,12 +814,360 @@ window.GALERIE = {
        "h": 1066
       }
      ]
+    },
+    {
+     "titre": "Défi Adultes loisirs",
+     "date": "Février",
+     "photos": [
+      {
+       "src": "2024/2024-defi-adultes-loisirs-fev-2024-1.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-defi-adultes-loisirs-fev-2024-2.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-defi-adultes-loisirs-fev-2024-3.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-defi-adultes-loisirs-fev-2024-4.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-defi-adultes-loisirs-fev-2024-5.webp",
+       "w": 960,
+       "h": 720
+      }
+     ]
+    },
+    {
+     "titre": "Meeting de Granville",
+     "date": "Février",
+     "photos": [
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-1.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-2.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-3.webp",
+       "w": 640,
+       "h": 960
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-4.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-5.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-6.webp",
+       "w": 1067,
+       "h": 1600
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-7.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-8.webp",
+       "w": 1067,
+       "h": 1600
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-9.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-10.webp",
+       "w": 960,
+       "h": 640
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-11.webp",
+       "w": 960,
+       "h": 640
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-12.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-13.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-14.webp",
+       "w": 960,
+       "h": 640
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-15.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-16.webp",
+       "w": 1067,
+       "h": 1600
+      },
+      {
+       "src": "2024/2024-meeting-de-granville-fev-2024-17.webp",
+       "w": 1600,
+       "h": 1067
+      }
+     ]
+    },
+    {
+     "titre": "Fête de Pâques",
+     "date": "",
+     "photos": [
+      {
+       "src": "2024/2024-paques-2024-1.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-paques-2024-2.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-paques-2024-3.webp",
+       "w": 720,
+       "h": 960
+      },
+      {
+       "src": "2024/2024-paques-2024-4.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2024/2024-paques-2024-5.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-paques-2024-6.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-paques-2024-7.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-paques-2024-8.webp",
+       "w": 720,
+       "h": 960
+      },
+      {
+       "src": "2024/2024-paques-2024-9.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-paques-2024-10.webp",
+       "w": 720,
+       "h": 960
+      },
+      {
+       "src": "2024/2024-paques-2024-11.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2024/2024-paques-2024-12.webp",
+       "w": 720,
+       "h": 960
+      },
+      {
+       "src": "2024/2024-paques-2024-13.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-paques-2024-14.webp",
+       "w": 720,
+       "h": 960
+      },
+      {
+       "src": "2024/2024-paques-2024-15.webp",
+       "w": 720,
+       "h": 960
+      },
+      {
+       "src": "2024/2024-paques-2024-16.webp",
+       "w": 720,
+       "h": 960
+      },
+      {
+       "src": "2024/2024-paques-2024-17.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2024/2024-paques-2024-18.webp",
+       "w": 960,
+       "h": 720
+      }
+     ]
+    },
+    {
+     "titre": "Swim run",
+     "date": "Avril et juin",
+     "photos": [
+      {
+       "src": "2024/2024-swim-run-avril-et-juin-2024-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2024/2024-swim-run-avril-et-juin-2024-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2024/2024-swim-run-avril-et-juin-2024-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2024/2024-swim-run-avril-et-juin-2024-4.webp",
+       "w": 1600,
+       "h": 1200
+      }
+     ]
+    },
+    {
+     "titre": "Championnats de Seine-Maritime Avenirs",
+     "date": "Juin",
+     "photos": [
+      {
+       "src": "2024/2024-chpts-76-avenirs-juin-2024-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2024/2024-chpts-76-avenirs-juin-2024-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2024/2024-chpts-76-avenirs-juin-2024-3.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
     }
    ]
   },
   {
    "annee": "2023",
    "albums": [
+    {
+     "titre": "Compétition à Gournay",
+     "date": "Mars",
+     "photos": [
+      {
+       "src": "2023/2023-competition-gournay-mars-2023-1.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2023/2023-competition-gournay-mars-2023-2.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Fête de Pâques",
+     "date": "",
+     "photos": [
+      {
+       "src": "2023/2023-paques-2023-1.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2023/2023-paques-2023-2.webp",
+       "w": 1600,
+       "h": 980
+      },
+      {
+       "src": "2023/2023-paques-2023-3.webp",
+       "w": 1600,
+       "h": 821
+      }
+     ]
+    },
+    {
+     "titre": "Eau libre à Yport",
+     "date": "Juin",
+     "photos": [
+      {
+       "src": "2023/2023-competition-eau-libre-yport-juin-20-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2023/2023-competition-eau-libre-yport-juin-20-2.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2023/2023-competition-eau-libre-yport-juin-20-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2023/2023-competition-eau-libre-yport-juin-20-4.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2023/2023-competition-eau-libre-yport-juin-20-5.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2023/2023-competition-eau-libre-yport-juin-20-6.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2023/2023-competition-eau-libre-yport-juin-20-7.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2023/2023-competition-eau-libre-yport-juin-20-8.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
     {
      "titre": "Eau libre à Jumièges",
      "date": "Septembre",
@@ -170,6 +1185,82 @@ window.GALERIE = {
      "photos": [
       {
        "src": "2023/maill-eau-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2023/2023-operation-tous-en-maill-eau-sept-20-1.webp",
+       "w": 960,
+       "h": 640
+      },
+      {
+       "src": "2023/2023-operation-tous-en-maill-eau-sept-20-2.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
+    },
+    {
+     "titre": "Meeting du Bout de l'an à Saint-Lô",
+     "date": "31 décembre",
+     "photos": [
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-1.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-2.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-3.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-4.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-5.webp",
+       "w": 960,
+       "h": 640
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-6.webp",
+       "w": 960,
+       "h": 640
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-7.webp",
+       "w": 1067,
+       "h": 1600
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-8.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-9.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-10.webp",
+       "w": 960,
+       "h": 720
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-11.webp",
+       "w": 1600,
+       "h": 1067
+      },
+      {
+       "src": "2023/2023-meeting-du-bout-de-l-an-st-lo-31-de-12.webp",
        "w": 1200,
        "h": 1600
       }
