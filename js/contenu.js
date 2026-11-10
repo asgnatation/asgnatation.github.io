@@ -128,7 +128,7 @@ window.CLUB = {
       heure: "18:00",
       lieu: "Creil",
       public: "Réservé aux nageurs Masters",
-      lienLive: ""
+      lienLive: "https://www.liveffn.com/cgi-bin/programme.php?competition=94836&langue=fra"
     }
   ],
 
