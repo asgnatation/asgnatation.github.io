@@ -88,11 +88,15 @@ function init() {
   const now = () => (performance.now() - t0) / 1000;
   const addRipple = (x, y, s = 1) => { ripples.set([x, y, now(), s], ri * 4); ri = (ri + 1) % MAX; };
 
-  let W = 0, Hh = 0, scale = 1;
+  // Économie : l'eau est floue par nature, on la calcule sur un nombre de pixels limité
+  // (le navigateur l'agrandit en douceur) et on baisse encore si l'ordinateur peine.
+  let W = 0, Hh = 0, quality = 1;
+  const BUDGET = 900000;            // pixels calculés au maximum par image
   const resize = () => {
     const r = canvas.getBoundingClientRect();
     const dpr = Math.min(devicePixelRatio || 1, r.width < 700 ? 1.25 : 1.5);
-    scale = dpr; W = Math.max(1, Math.round(r.width * dpr)); Hh = Math.max(1, Math.round(r.height * dpr));
+    const s = Math.min(dpr, Math.sqrt(BUDGET * quality / Math.max(1, r.width * r.height)));
+    W = Math.max(1, Math.round(r.width * s)); Hh = Math.max(1, Math.round(r.height * s));
     canvas.width = W; canvas.height = Hh; gl.viewport(0, 0, W, Hh);
     const aspect = W / Hh;
     gl.uniform1f(uLane, aspect > 1.2 ? aspect * 0.78 : aspect * 0.86);
@@ -113,13 +117,22 @@ function init() {
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   };
   if (reduce) { draw(); return; }
-  let visible = true, raf = 0, drop = 0;
+  let visible = true, raf = 0, drop = 0, lastDraw = 0, prev = 0, slow = 0;
+  const FRAME = 1 / 30;             // 30 images/s suffisent pour une eau qui ondule lentement
   new IntersectionObserver(([en]) => { visible = en.isIntersecting; if (visible && !raf) loop(); }).observe(canvas);
   document.addEventListener("visibilitychange", () => { if (!document.hidden && !raf) loop(); });
   const loop = () => {
-    raf = 0; if (!visible || document.hidden) return;
-    if (now() - drop > 2.6) { drop = now(); addRipple(Math.random() * (W / Hh), 0.15 + Math.random() * 0.7, 0.9); }
-    draw(); raf = requestAnimationFrame(loop);
+    raf = 0; if (!visible || document.hidden) { prev = 0; return; }
+    const t = now();
+    // si les images arrivent en retard plusieurs fois de suite, on allège la résolution
+    if (prev) { const gap = t - prev; slow = gap > 0.06 ? slow + 1 : Math.max(0, slow - 1); if (slow > 8 && quality > 0.45) { quality *= 0.75; slow = 0; resize(); } }
+    prev = t;
+    if (t - lastDraw >= FRAME - 0.004) {
+      lastDraw = t;
+      if (t - drop > 2.6) { drop = t; addRipple(Math.random() * (W / Hh), 0.15 + Math.random() * 0.7, 0.9); }
+      draw();
+    }
+    raf = requestAnimationFrame(loop);
   };
   addRipple((W / Hh) * 0.7, 0.55, 1.2);
   loop();

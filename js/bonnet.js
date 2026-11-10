@@ -16,7 +16,7 @@ function fallback() {
 
 function start() {
   const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: "high-performance" });
-  renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 2));
+  renderer.setPixelRatio(Math.min(devicePixelRatio || 1, 1.5));
   renderer.outputColorSpace = THREE.SRGBColorSpace;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.05;
@@ -44,7 +44,7 @@ function start() {
   const SX = 0.86, SY = 1.0, SZ = 1.14;
   const half = (side) => {
     const phiStart = side < 0 ? -Math.PI / 2 : Math.PI / 2;
-    const g = new THREE.SphereGeometry(1, 180, 140, phiStart, Math.PI, 0, THETA);
+    const g = new THREE.SphereGeometry(1, 128, 100, phiStart, Math.PI, 0, THETA);
     const pos = g.attributes.position, uv = g.attributes.uv;
     for (let i = 0; i < pos.count; i++) {
       const nx = pos.getX(i), ny = pos.getY(i), nz = pos.getZ(i);
@@ -139,6 +139,7 @@ function start() {
   }
 
   const clock = new THREE.Clock();
+  let lastRender = 0;
   const loop = () => {
     raf = 0;
     if (!visible) return;
@@ -146,6 +147,10 @@ function start() {
     if (!dragging) { drag += vel; vel *= 0.94; }
     if (mode === "spin" && !dragging) target += dt * 0.9;
     const goal = target + drag + scrollRot + intro.r;
+    // au repos (simple balancement), 30 images/s suffisent ; pleine vitesse dès qu'on le fait tourner
+    const moving = dragging || Math.abs(vel) > 1e-4 || Math.abs(goal - group.rotation.y) > 0.003 || intro.s < 0.999 || mode === "spin";
+    if (!moving && t - lastRender < 1 / 30 - 0.004) { raf = requestAnimationFrame(loop); return; }
+    lastRender = t;
     group.rotation.y += (goal - group.rotation.y) * Math.min(1, dt * 7);
     group.position.y = intro.y + (reduce ? 0 : Math.sin(t * 1.4) * 0.05);
     group.rotation.z = reduce ? 0 : Math.sin(t * 0.9) * 0.035;
