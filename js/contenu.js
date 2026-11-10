@@ -31,7 +31,7 @@ window.CLUB = {
   },
 
   chiffres: [
-    { valeur: 105, suffixe: "", label: "licenciés cette saison" },
+    { valeur: 107, suffixe: "", label: "licenciés cette saison" },
     { valeur: 6, suffixe: "", label: "groupes, du loisir à la compète" },
     { valeur: 5, suffixe: "", label: "jours d'entraînement par semaine" },
     { valeur: 25, suffixe: " m", label: "le bassin sportif" },
@@ -119,6 +119,15 @@ window.CLUB = {
       heure: "09:00",
       lieu: "Le Havre",
       public: "Réservée aux nageurs nés de 2015 à 2019",
+      lienLive: "https://www.liveffn.com/cgi-bin/startlist.php?competition=95051&langue=fra&go=detail&action=structure&structure=1873"
+    },
+    {
+      type: "competition",
+      nom: "Meeting Maîtres à Creil",
+      date: "2026-11-14",
+      heure: "18:00",
+      lieu: "Creil",
+      public: "Réservé aux nageurs Masters",
       lienLive: ""
     }
   ],
