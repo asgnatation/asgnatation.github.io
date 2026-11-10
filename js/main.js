@@ -165,8 +165,11 @@
       const v = { j: Math.floor(d / 86400), h: Math.floor(d / 3600) % 24, m: Math.floor(d / 60) % 60, s: Math.floor(d) % 60 };
       $$("[data-u]", nextEl).forEach((b) => (b.textContent = String(v[b.dataset.u]).padStart(2, "0")));
       const badge = d > 0 ? `J-${v.j}<small>${v.j > 1 ? "jours" : "jour"}</small>` : `J<small>c'est parti</small>`;
-      heroNext.innerHTML = `<a href="${live ? esc(live) : "#competitions"}"${live ? ' target="_blank" rel="noopener"' : ""}><span class="cd">${badge}</span><span><b>${esc(pc.lieu)}</b><span class="s">${esc(dLong(pc))}</span></span></a>`;
+      if (badge !== lastBadge) { lastBadge = badge; heroCd.innerHTML = badge; }
     };
+    // encart du haut : construit une seule fois (un clic descend vers les événements), seul le compteur change
+    heroNext.innerHTML = `<a href="#competitions"><span class="cd"></span><span><b>${esc(pc.lieu)}</b><span class="s">${esc(dLong(pc))}</span></span></a>`;
+    const heroCd = $(".cd", heroNext); let lastBadge = "";
     tick(); setInterval(tick, 1000);
     $("#upcoming").innerHTML = evs.slice(1).map((e) => `<li><time datetime="${e.date}">${esc(fmtDate(e.date, { day: "numeric", month: "short" }))}</time><b>${esc(e.nom)}</b><span>${esc(e.lieu)}${e.public ? " · " + esc(e.public) : ""}</span>${e.lienLive ? `<a href="${esc(e.lienLive)}" target="_blank" rel="noopener">Live FFN →</a>` : ""}</li>`).join("");
   } else {
