@@ -301,6 +301,14 @@ button{font:inherit; color:inherit; cursor:pointer}
 .hl{list-style:none; padding:0; margin:auto 0 0; display:grid; gap:0; border-top:1px solid var(--line)}
 .hl li{display:flex; gap:12px; align-items:baseline; padding:9px 0; border-bottom:1px dashed var(--line); font-size:.88rem}
 .hl b{font:600 1rem var(--f-mono); color:var(--pool-deep); min-width:4.6em; font-variant-numeric:tabular-nums}
+.post__more{font-size:.93rem; color:var(--muted)}
+.post__more summary{cursor:pointer; width:max-content; font-weight:700; color:var(--pool-deep); list-style:none}
+.post__more summary::-webkit-details-marker{display:none}
+.post__more summary::after{content:" ↓"} .post__more[open] summary::after{content:" ↑"}
+.post__more p{margin:.7em 0 0; line-height:1.55}
+.post__links{display:flex; flex-wrap:wrap; gap:8px 16px; margin-top:4px}
+.post__links a, .post__links button{font:700 .9rem var(--f-body); color:var(--pool-deep); text-decoration:none; background:none; border:0; padding:0; cursor:pointer}
+.post__links a:hover, .post__links button:hover{text-decoration:underline}
 .more{margin:28px 0 0}
 @media (max-width:960px){ .news{grid-template-columns:1fr 1fr} }
 @media (max-width:640px){ .news{grid-template-columns:1fr} }
