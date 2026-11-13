@@ -130,6 +130,12 @@
     V.showModal?.(); document.documentElement.style.overflow = "hidden"; window.__lenis?.stop();
     requestAnimationFrame(() => goTo(i, false));
   };
+  // ouverture d'un album depuis ailleurs sur le site (bouton « Voir les photos » d'une actu)
+  window.openGalerieAlbum = (annee, titre) => {
+    const y = years.find((x) => x.annee === String(annee)); if (!y) return false;
+    const ai = y.albums.findIndex((a) => a.titre === titre); if (ai < 0) return false;
+    openViewer(y, ai, 0); return true;
+  };
   V.addEventListener("close", () => { document.documentElement.style.overflow = ""; window.__lenis?.start(); alb = null; track.innerHTML = ""; });
   $("#vw-close").addEventListener("click", () => V.close());
   $("#vw-prev").addEventListener("click", () => goTo((tgt ?? pi) - 1));

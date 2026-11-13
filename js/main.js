@@ -143,11 +143,25 @@
 
   /* ---------- événements à venir ---------- */
   const startOf = (e) => new Date(`${e.date}T${e.heure || "09:00"}:00`);
-  const endOf = (e) => new Date(`${e.date}T23:59:59`);
+  const endOf = (e) => new Date(`${e.dateFin || e.date}T23:59:59`);
   const evs = (C.evenements || []).filter((e) => endOf(e) > new Date()).sort((a, b) => startOf(a) - startOf(b));
   const wrap = $("#next-wrap"), heroNext = $("#hero-next");
   const TAG = { competition: "Prochaine compète", evenement: "Prochain événement" };
-  const dLong = (e) => fmtDate(e.date, { weekday: "long", day: "numeric", month: "long" });
+  // événement sur plusieurs jours : dateFin (facultatif) => « samedi 21 et dimanche 22 novembre »
+  const dLong = (e) => {
+    if (!e.dateFin || e.dateFin === e.date) return fmtDate(e.date, { weekday: "long", day: "numeric", month: "long" });
+    const sameMonth = e.date.slice(0, 7) === e.dateFin.slice(0, 7);
+    const deb = fmtDate(e.date, sameMonth ? { weekday: "long", day: "numeric" } : { weekday: "long", day: "numeric", month: "long" });
+    const fin = fmtDate(e.dateFin, { weekday: "long", day: "numeric", month: "long" });
+    const n = (new Date(e.dateFin) - new Date(e.date)) / 864e5;
+    return n === 1 ? `${deb} et ${fin}` : `du ${deb} au ${fin}`;
+  };
+  const dShort = (e) => {
+    if (!e.dateFin || e.dateFin === e.date) return fmtDate(e.date, { day: "numeric", month: "short" });
+    return e.date.slice(0, 7) === e.dateFin.slice(0, 7)
+      ? `${fmtDate(e.date, { day: "numeric" })}-${fmtDate(e.dateFin, { day: "numeric", month: "short" })}`
+      : `${fmtDate(e.date, { day: "numeric", month: "short" })} - ${fmtDate(e.dateFin, { day: "numeric", month: "short" })}`;
+  };
   if (evs.length) {
     const pc = evs[0], target = startOf(pc), live = pc.lienLive && pc.lienLive.trim();
     const inner = `
@@ -171,7 +185,7 @@
     heroNext.innerHTML = `<a href="#competitions"><span class="cd"></span><span><b>${esc(pc.lieu)}</b><span class="s">${esc(dLong(pc))}</span></span></a>`;
     const heroCd = $(".cd", heroNext); let lastBadge = "";
     tick(); setInterval(tick, 1000);
-    $("#upcoming").innerHTML = evs.slice(1).map((e) => `<li><time datetime="${e.date}">${esc(fmtDate(e.date, { day: "numeric", month: "short" }))}</time><b>${esc(e.nom)}</b><span>${esc(e.lieu)}${e.public ? " · " + esc(e.public) : ""}</span>${e.lienLive ? `<a href="${esc(e.lienLive)}" target="_blank" rel="noopener">Live FFN →</a>` : ""}</li>`).join("");
+    $("#upcoming").innerHTML = evs.slice(1).map((e) => `<li><time datetime="${e.date}">${esc(dShort(e))}</time><b>${esc(e.nom)}</b><span>${esc(e.lieu)}${e.public ? " · " + esc(e.public) : ""}</span>${e.lienLive ? `<a href="${esc(e.lienLive)}" target="_blank" rel="noopener">Live FFN →</a>` : ""}</li>`).join("");
   } else {
     wrap.innerHTML = `<div class="next"><div class="next__date"><b>?</b><span>bientôt</span></div><div><p class="next__tag">Prochaine compète</p><h2 class="next__name">Le calendrier arrive</h2><p class="next__meta">Suis le club sur Instagram pour les prochaines dates.</p></div></div>`;
     heroNext.remove();
@@ -188,9 +202,16 @@
         <time class="post__date" datetime="${a.date}">${esc(fmtDate(a.date, { day: "numeric", month: "long", year: "numeric" }))}</time>
         <h3 class="post__title">${esc(a.titre)}</h3>
         <p class="post__txt">${esc(a.resume)}</p>
+        ${a.texte?.length ? `<details class="post__more"><summary>Lire l'article</summary>${a.texte.map((t) => `<p>${esc(t)}</p>`).join("")}</details>` : ""}
         ${a.temps_forts?.length ? `<ul class="hl">${a.temps_forts.map((t) => `<li><b>${esc(t.valeur)}</b><span>${esc(t.label)}</span></li>`).join("")}</ul>` : ""}
+        ${a.liens?.length || a.album ? `<div class="post__links">${(a.liens || []).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} →</a>`).join("")}${a.album ? `<button type="button" data-album-annee="${esc(a.album.annee)}" data-album-titre="${esc(a.album.titre)}">Voir les photos →</button>` : ""}</div>` : ""}
       </div>
     </article>`).join("");
+  // « Voir les photos » : ouvre l'album correspondant dans la visionneuse de la galerie
+  $("#news").addEventListener("click", (e) => {
+    const b = e.target.closest("[data-album-annee]"); if (!b) return;
+    if (!window.openGalerieAlbum?.(b.dataset.albumAnnee, b.dataset.albumTitre)) location.hash = "#galerie-" + b.dataset.albumAnnee;
+  });
   $("#filters").addEventListener("click", (e) => {
     const b = e.target.closest("[data-cat]"); if (!b) return;
     $$("#filters .chip").forEach((x) => x.classList.toggle("is-on", x === b));

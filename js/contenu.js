@@ -110,6 +110,7 @@ window.CLUB = {
      Pour en ajouter un : copier un bloc { ... }, le coller dans la liste et changer les infos.
        type     : "competition" ou "evenement"
        date     : "AAAA-MM-JJ"      heure : "HH:MM"
+       dateFin  : "AAAA-MM-JJ" (facultatif, pour un événement sur plusieurs jours)
        lienLive : lien du live FFN (programme et résultats). Laisser "" tant que la FFN ne l'a pas publié. */
   evenements: [
     {
@@ -129,6 +130,35 @@ window.CLUB = {
       lieu: "Creil",
       public: "Réservé aux nageurs Masters",
       lienLive: "https://www.liveffn.com/cgi-bin/programme.php?competition=94836&langue=fra"
+    },
+    {
+      type: "competition",
+      nom: "Championnats de Seine-Maritime à Fécamp",
+      date: "2026-11-21",
+      dateFin: "2026-11-22",
+      heure: "",
+      lieu: "Fécamp",
+      public: "Toutes catégories",
+      lienLive: ""
+    },
+    {
+      type: "competition",
+      nom: "Championnats de Normandie à Granville",
+      date: "2026-12-04",
+      dateFin: "2026-12-05",
+      heure: "",
+      lieu: "Granville",
+      public: "Toutes catégories",
+      lienLive: ""
+    },
+    {
+      type: "competition",
+      nom: "Meeting Maîtres au Havre",
+      date: "2026-12-13",
+      heure: "",
+      lieu: "Le Havre",
+      public: "Réservé aux nageurs Masters",
+      lienLive: ""
     }
   ],
 
@@ -138,6 +168,27 @@ window.CLUB = {
 
   /* Actus et résultats. categorie : "bassin", "eau-libre" ou "vie-du-club" */
   actus: [
+    {
+      categorie: "bassin",
+      date: "2026-11-11",
+      titre: "L'ASG Natation en force !",
+      image: "2026/competition-u11-le-havre-mer-11-nov-2026-11.webp",
+      resume: "Première compétition pour nos plus jeunes ce mercredi au Havre. La relève est bien là avec ces 8 nageurs U11.",
+      texte: [
+        "Dure loi pour nos petits 2019 qui concouraient dans la catégorie des 2017/2018. Qu'importe, se sont dit Joseph Ternon, Rose Marinangeli et Margot André, nous allons monter sur le podium 🤩, comme en témoignent les photos ! Charlotte Delahaye finit au pied du podium au 50 m NL mais signe surtout la meilleure performance de la compétition des 2019 !",
+        "Énorme ambiance et un collectif très soudé avec le soutien de Félix André et Julian Dekkers, déjà habitués aux compétitions. Ces deux derniers ont signé de beaux podiums, dont un triplé pour Félix. Gabriel Marinangeli termine sans complexe 1er au 25 m papillon et 3e au 25 m dos. Tom Bondu Bodin a eu un parcours mouvementé et aurait pu terminer 1er des 2015 sur son 25 m dos, mais le destin en a voulu autrement. Tous sont repartis avec le désir de revivre ces moments collectifs et nul doute que le résultat sera encore meilleur à leur prochaine compétition.",
+        "Un grand merci aux officiels Jennifer Dekkers et Camille Métier ainsi qu'aux parents qui ont été de réels supporters, à l'image des photos."
+      ],
+      temps_forts: [
+        { valeur: "8", label: "nageurs U11 pour leur première compétition" },
+        { valeur: "Triplé", label: "pour Félix André" },
+        { valeur: "1er", label: "Gabriel Marinangeli, 25 m papillon" }
+      ],
+      liens: [
+        { label: "Résultats sur le live FFN", url: "https://www.liveffn.com/cgi-bin/resultats.php?competition=95051&langue=fra&go=detail&action=structure&structure&structure=1873" }
+      ],
+      album: { annee: "2026", titre: "Compétition U11 au Havre" }
+    },
     {
       categorie: "bassin",
       date: "2026-10-11",

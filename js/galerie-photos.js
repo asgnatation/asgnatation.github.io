@@ -351,6 +351,17 @@ window.GALERIE = {
      ]
     },
     {
+     "titre": "Championnats régionaux Benjamins",
+     "date": "Juin",
+     "photos": [
+      {
+       "src": "2026/reg-benjamins-1.webp",
+       "w": 1600,
+       "h": 1206
+      }
+     ]
+    },
+    {
      "titre": "Forum des associations",
      "date": "Septembre",
      "photos": [
@@ -393,13 +404,78 @@ window.GALERIE = {
      ]
     },
     {
-     "titre": "Championnats régionaux Benjamins",
-     "date": "",
+     "titre": "Compétition U11 au Havre",
+     "date": "11 novembre",
      "photos": [
       {
-       "src": "2026/reg-benjamins-1.webp",
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-11.webp",
        "w": 1600,
-       "h": 1206
+       "h": 1200
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-1.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-2.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-5.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-6.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-7.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-8.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-9.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-10.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-12.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-13.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/competition-u11-le-havre-mer-11-nov-2026-14.webp",
+       "w": 1200,
+       "h": 1600
       }
      ]
     }
