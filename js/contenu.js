@@ -182,7 +182,7 @@ window.CLUB = {
       temps_forts: [
         { valeur: "8", label: "nageurs U11 pour leur première compétition" },
         { valeur: "Triplé", label: "pour Félix André" },
-        { valeur: "1er", label: "25 m papillon (catégorie)" }
+        { valeur: "1er", label: "Gabriel, 25 m papillon (catégorie)" }
       ],
       liens: [
         { label: "Résultats sur le live FFN", url: "https://www.liveffn.com/cgi-bin/resultats.php?competition=95051&langue=fra&go=detail&action=structure&structure&structure=1873" }
