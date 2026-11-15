@@ -478,6 +478,42 @@ window.GALERIE = {
        "h": 1600
       }
      ]
+    },
+    {
+     "titre": "Meeting Maîtres à Creil",
+     "date": "14 novembre",
+     "photos": [
+      {
+       "src": "2026/meeting-maitres-creil-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/meeting-maitres-creil-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/meeting-maitres-creil-2.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/meeting-maitres-creil-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/meeting-maitres-creil-5.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/meeting-maitres-creil-6.webp",
+       "w": 1600,
+       "h": 1200
+      }
+     ]
     }
    ]
   },

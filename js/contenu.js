@@ -170,6 +170,22 @@ window.CLUB = {
   actus: [
     {
       categorie: "bassin",
+      date: "2026-11-14",
+      titre: "Creil : 5 podiums pour nos Maîtres",
+      image: "2026/meeting-maitres-creil-4.webp",
+      resume: "David et François représentaient l'ASG au meeting Maîtres des 100 ans du club de Creil. Bilan : 5 courses, 5 podiums !",
+      temps_forts: [
+        { valeur: "3\u00a0×\u00a01er", label: "David, 50 m dos, 100 m dos et 100 m brasse (catégorie)" },
+        { valeur: "33\"33", label: "David, 50 m dos" },
+        { valeur: "2\u00a0×\u00a02e", label: "François, 50 m NL et 50 m papillon (catégorie)" }
+      ],
+      liens: [
+        { label: "Résultats sur le live FFN", url: "https://www.liveffn.com/cgi-bin/resultats.php?competition=94836&langue=fra&go=detail&action=structure&structure=1873" }
+      ],
+      album: { annee: "2026", titre: "Meeting Maîtres à Creil" }
+    },
+    {
+      categorie: "bassin",
       date: "2026-11-11",
       titre: "L'ASG Natation en force !",
       image: "2026/competition-u11-le-havre-mer-11-nov-2026-11.webp",
