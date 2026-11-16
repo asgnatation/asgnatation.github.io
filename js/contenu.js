@@ -171,9 +171,14 @@ window.CLUB = {
     {
       categorie: "bassin",
       date: "2026-11-14",
-      titre: "Creil : 5 podiums pour nos Maîtres",
+      titre: "Meeting Maîtres de Creil",
       image: "2026/meeting-maitres-creil-4.webp",
-      resume: "David et François représentaient l'ASG au meeting Maîtres des 100 ans du club de Creil. Bilan : 5 courses, 5 podiums !",
+      resume: "5 podiums pour nos Maîtres ! François Sévillano bat son record personnel en C6 sur 50 m NL en 39\"24 et termine 2e de sa catégorie.",
+      texte: [
+        "David Cotineau réalise des performances encourageantes, mais pas encore à la hauteur de ses attentes. Il se qualifie tout de même pour les Championnats de France N1 2027 sur 50 et 100 m dos, deux courses qu'il remporte, tout comme le 100 m brasse : 3 fois 1er.",
+        "Un grand merci à Margot Cateigne de les avoir accompagnés en tant qu'officielle juge de nages.",
+        "Voici le retour en photos dans une très belle piscine à l'architecture peu banale, avec un club qui fêtait ses 100 ans d'existence."
+      ],
       temps_forts: [
         { valeur: "3\u00a0×\u00a01er", label: "David, 50 m dos, 100 m dos et 100 m brasse (catégorie)" },
         { valeur: "33\"33", label: "David, 50 m dos" },
@@ -181,8 +186,7 @@ window.CLUB = {
       ],
       liens: [
         { label: "Résultats sur le live FFN", url: "https://www.liveffn.com/cgi-bin/resultats.php?competition=94836&langue=fra&go=detail&action=structure&structure=1873" }
-      ],
-      album: { annee: "2026", titre: "Meeting Maîtres à Creil" }
+      ]
     },
     {
       categorie: "bassin",
@@ -202,8 +206,7 @@ window.CLUB = {
       ],
       liens: [
         { label: "Résultats sur le live FFN", url: "https://www.liveffn.com/cgi-bin/resultats.php?competition=95051&langue=fra&go=detail&action=structure&structure&structure=1873" }
-      ],
-      album: { annee: "2026", titre: "Compétition U11 au Havre" }
+      ]
     },
     {
       categorie: "bassin",
