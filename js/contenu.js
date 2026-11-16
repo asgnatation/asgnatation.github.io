@@ -175,7 +175,7 @@ window.CLUB = {
       image: "2026/meeting-maitres-creil-4.webp",
       resume: "5 podiums pour nos Maîtres ! François Sévillano bat son record personnel en C6 sur 50 m NL en 39\"24 et termine 2e de sa catégorie.",
       texte: [
-        "David Cotineau réalise des performances encourageantes, mais pas encore à la hauteur de ses attentes. Il se qualifie tout de même pour les Championnats de France N1 2027 sur 50 et 100 m dos, deux courses qu'il remporte, tout comme le 100 m brasse : 3 fois 1er.",
+        "David Cotineau réalise des perf encourageantes mais pas encore à la hauteur de ses attentes. Il se qualifie tout de même aux Championnats de France N1 de 2027 sur 50 et 100m dos où il finit 3x 1er ainsi qu'au 100m br.",
         "Un grand merci à Margot Cateigne de les avoir accompagnés en tant qu'officielle juge de nages.",
         "Voici le retour en photos dans une très belle piscine à l'architecture peu banale, avec un club qui fêtait ses 100 ans d'existence."
       ],
