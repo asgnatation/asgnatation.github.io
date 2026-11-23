@@ -170,6 +170,24 @@ window.CLUB = {
   actus: [
     {
       categorie: "bassin",
+      date: "2026-11-22",
+      titre: "Championnats départementaux à Fécamp",
+      image: "2026/championnats-76-fecamp-2.webp",
+      resume: "Excellente nouvelle lors des championnats départementaux hiver à Fécamp ce week-end : Enola Chouquet s’est qualifiée aux Championnats de Normandie U13 (nageurs nés en 2013 et 2014) qui auront lieu à Pont Audemer dimanche 14 décembre.",
+      texte: [
+        "Frustrée de ne pas avoir pu participer à la compétition précédente en octobre à Nogent, Enola, née en 2014, vient de se qualifier sur 50m et 100m brasse en 48’’42 et 1’43’’63 ! Elle finit 6è du département sur ces deux courses dans la catégorie des 2013/2014/2015. Une belle récompense pour elle qui nage déjà depuis longtemps au club. Tout le bureau se joint au coach pour la féliciter.",
+        "3 nageurs participaient à ces championnats 76 : Enola Chouquet, Jade Martin et Médéric Cotineau. Ce dernier est en pleine préparation pour les Championnats régionaux qui auront lieu dans 2 semaines mais il termine tout de même 6è toutes catégories sur 50 et 100m dos en 30’’08 et 1’05’’10.",
+        "Pour Jade Martin (née en 2009) c’est carton plein ! Elle réalise un magnifique 31’’93 au 50m nl la plaçant à 1 seconde de la qualification aux championnats de Normandie. Elle réalise aussi un beau 38’’71 au 50m papillon.",
+        "Il fallait être de niveau national pour monter sur le podium de ces championnats 76 alors même s’il n’y a pas eu de médaille, quelle fierté pour notre petit club de porter les couleurs de Gournay au niveau régional. Un grand merci à Mariane Pastore notre officiel d’avoir été présente et à Maxime Martin pour sa présence en tant que supporter."
+      ],
+      temps_forts: [
+        { valeur: "2", label: "qualifications d’Enola aux Championnats de Normandie U13 (50 et 100 m brasse)" },
+        { valeur: "31\"93", label: "Jade, 50 m NL" },
+        { valeur: "6e", label: "Médéric, 50 et 100 m dos (toutes catégories)" }
+      ]
+    },
+    {
+      categorie: "bassin",
       date: "2026-11-14",
       titre: "Meeting Maîtres de Creil",
       image: "2026/meeting-maitres-creil-4.webp",

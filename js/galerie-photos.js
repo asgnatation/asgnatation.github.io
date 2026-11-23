@@ -514,6 +514,42 @@ window.GALERIE = {
        "h": 1200
       }
      ]
+    },
+    {
+     "titre": "Championnats de Seine-Maritime à Fécamp",
+     "date": "21 et 22 novembre",
+     "photos": [
+      {
+       "src": "2026/championnats-76-fecamp-2.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/championnats-76-fecamp-1.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/championnats-76-fecamp-3.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/championnats-76-fecamp-4.webp",
+       "w": 1200,
+       "h": 1600
+      },
+      {
+       "src": "2026/championnats-76-fecamp-5.webp",
+       "w": 1600,
+       "h": 1200
+      },
+      {
+       "src": "2026/championnats-76-fecamp-6.webp",
+       "w": 1200,
+       "h": 1600
+      }
+     ]
     }
    ]
   },
