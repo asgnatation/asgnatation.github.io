@@ -184,6 +184,9 @@ window.CLUB = {
         { valeur: "2", label: "qualifications d’Enola aux Championnats de Normandie U13 (50 et 100 m brasse)" },
         { valeur: "31\"93", label: "Jade, 50 m NL" },
         { valeur: "6e", label: "Médéric, 50 et 100 m dos (toutes catégories)" }
+      ],
+      liens: [
+        { label: "Résultats sur le live FFN", url: "https://www.liveffn.com/cgi-bin/resultats.php?competition=95052&langue=fra&go=detail&action=structure&structure&structure=1873" }
       ]
     },
     {
